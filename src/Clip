@@ -1,0 +1,6 @@
+public class Clip {
+private String title;
+private String teamTag; //ex. Girls Soccer 
+private String description;
+private int likes;
+}
