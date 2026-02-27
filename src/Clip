@@ -1,7 +1,42 @@
 public class Clip {
+
     private String title;
-    private String teamTag; //ex. Girls Soccer
+    private Team team;      // instead of String
     private String description;
     private int likes;
+
+    public Clip(String title, Team team, String description) {
+        this.title = title;
+        this.team = team;
+        this.description = description;
+        this.likes = 0;   // starts at 0 automatically
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void likeClip() {
+        likes++;
+    }
+
+    public String toString() {
+        return "Title: " + title +
+               "\nTeam: " + team.getGender() + " " + team.getRoster().size() + " players" +
+               "\nDescription: " + description +
+               "\nLikes: " + likes;
+    }
 }
 
