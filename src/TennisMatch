@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+
+public class TennisMatch {
+
+    private String opponent;
+    private String date;
+
+    private ArrayList<TennisGameResult> results;
+
+    public TennisMatch(String opponent, String date) {
+        this.opponent = opponent;
+        this.date = date;
+        results = new ArrayList<>();
+    }
+
+    public void addResult(TennisGameResult r) {
+        results.add(r);
+    }
+
+    public ArrayList<TennisGameResult> getResults() {
+        return results;
+    }
+
+    public String getOpponent() {
+        return opponent;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public int getTeamWins() {
+
+        int wins = 0;
+
+        for (TennisGameResult r : results) {
+            if (r.isWin()) {
+                wins++;
+            }
+        }
+
+        return wins;
+    }
+}
