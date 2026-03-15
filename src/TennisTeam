@@ -1,0 +1,35 @@
+import java.util.ArrayList;
+
+public class TennisTeam {
+
+    private String teamName;
+
+    private ArrayList<TennisPlayer> roster;
+    private ArrayList<TennisMatch> matches;
+
+    public TennisTeam(String teamName) {
+        this.teamName = teamName;
+        roster = new ArrayList<>();
+        matches = new ArrayList<>();
+    }
+
+    public void addPlayer(TennisPlayer p) {
+        roster.add(p);
+    }
+
+    public void addMatch(TennisMatch m) {
+        matches.add(m);
+    }
+
+    public ArrayList<TennisPlayer> getRoster() {
+        return roster;
+    }
+
+    public ArrayList<TennisMatch> getMatches() {
+        return matches;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+}
