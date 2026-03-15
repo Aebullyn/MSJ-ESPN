@@ -1,0 +1,241 @@
+import java.util.*;
+
+public class TennisData {
+
+    public static TennisTeam createTeam() {
+        //ROSTER
+        TennisTeam msj = new TennisTeam("Mission San Jose Boys Tennis");
+        TennisPlayer nikhil = new TennisPlayer("Nikhil Ramani");
+        TennisPlayer yash = new TennisPlayer("Yash Shekhawat");
+        TennisPlayer vittesh = new TennisPlayer("Vittesh Maganti");
+        TennisPlayer caden = new TennisPlayer("Caden Yang");
+        TennisPlayer archit = new TennisPlayer("Archit Shenoy");
+        TennisPlayer abhay = new TennisPlayer("Abhay Shankar");
+        TennisPlayer matthew = new TennisPlayer("Matthew Li");
+        TennisPlayer jayden = new TennisPlayer("Jayden Kim");
+        TennisPlayer howard = new TennisPlayer("Howard Lu");
+        TennisPlayer callan = new TennisPlayer("Callan Pang");
+        TennisPlayer cody = new TennisPlayer("Cody Pang");
+        TennisPlayer rohan = new TennisPlayer("Rohan Kolala");
+        TennisPlayer william = new TennisPlayer("William Zhou");
+        TennisPlayer patrick = new TennisPlayer("Patrick Aoun");
+        TennisPlayer kaiden = new TennisPlayer("Kaiden Ferguson");
+        TennisPlayer arav = new TennisPlayer("Arav Bhise");
+        msj.addPlayer(nikhil);
+        msj.addPlayer(yash);
+        msj.addPlayer(vittesh);
+        msj.addPlayer(caden);
+        msj.addPlayer(archit);
+        msj.addPlayer(abhay);
+        msj.addPlayer(matthew);
+        msj.addPlayer(jayden);
+        msj.addPlayer(howard);
+        msj.addPlayer(callan);
+        msj.addPlayer(cody);
+        msj.addPlayer(rohan);
+        msj.addPlayer(william);
+        msj.addPlayer(patrick);
+        msj.addPlayer(kaiden);
+        msj.addPlayer(arav);
+
+        //MATCHES
+
+        //VS American (3.4.2025)
+        TennisMatch american1 = new TennisMatch("American", "3/4/25");
+        //SINGLES
+        american1.addResult(new TennisGameResult("Singles 1", nikhil, "Vihaan Dahiya", "6-1, 6-2", true));
+        american1.addResult(new TennisGameResult("Singles 2", yash, "Agasthya Jampani", "3-6, 2-6", false));
+        american1.addResult(new TennisGameResult("Singles 3", vittesh, "Daniel Lu", "1-6, 3-6", false));
+        american1.addResult(new TennisGameResult("Singles 4", caden, "Jason Li", "6-1, 3-6, 0-1 (11)", false));
+        //DOUBLES
+        american1.addResult(new TennisGameResult("Doubles 1", jayden, abhay, "Joshua Dong / Nikhil Sinha", "6-0, 6-1", true));
+        american1.addResult(new TennisGameResult("Doubles 2", howard, archit, "Krish Patel / Pratham Gandhi", "5-7, 4-6", false));
+        american1.addResult(new TennisGameResult("Doubles 3", callan, cody, "Jayden Liu / Sanjay Thirumalai", "6-1, 5-7, 1-0 (2)", true));
+
+        msj.addMatch(american1);
+
+        //VS Kennedy (3.6.2025)
+        TennisMatch kennedy = new TennisMatch("Kennedy", "3/6/25");
+        //SINGLES
+        kennedy.addResult(new TennisGameResult("Singles 1", yash, "Dhruv Singh", "6-0 6-1", true));
+        kennedy.addResult(new TennisGameResult("Singles 2", vittesh, "Saarthak Korde", "6-3,6-1", true));
+        kennedy.addResult(new TennisGameResult("Singles 3", archit, "Abhi Vaddepaty", "6-0,6-0", true));
+        kennedy.addResult(new TennisGameResult("Singles 4", arav, "default", "default", true));
+        //DOUBLES
+        kennedy.addResult(new TennisGameResult("Doubles 1", matthew, caden, "Shivash Negi / Karan Singh", "6-0 6-0", true));
+        kennedy.addResult(new TennisGameResult("Doubles 2", howard, william, "Sathvik Polepalli / Gavin Crum", "6-0 6-0", true));
+        kennedy.addResult(new TennisGameResult("Doubles 3", patrick, kaiden, "Tanush Yedal / Leo Ahntholz", "6-0 6-0", true));
+
+        msj.addMatch(kennedy);
+
+        //VS Moreau (3.11.2025)
+        TennisMatch moreau = new TennisMatch("Moreau", "3/11/25");
+        //SINGLES
+        moreau.addResult(new TennisGameResult("Singles 1", abhay, "Gabe Garcia", "6-4,6-4", true));
+        moreau.addResult(new TennisGameResult("Singles 2", matthew, "Rayhan Hussain", "6-0,6-0", true));
+        moreau.addResult(new TennisGameResult("Singles 3", caden, "Mayank Sanav", "6-0,6-0", true));
+        moreau.addResult(new TennisGameResult("Singles 4", arav, "Alex Zhang", "6-0,6-0", true));
+        //DOUBLES
+        moreau.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Ayden Pardola / Aayush Gupta", "6-0,6-1", true));
+        moreau.addResult(new TennisGameResult("Doubles 2", vittesh, william, "Ethan Liu / Sam Basa", "6-0,6-0", true));
+        moreau.addResult(new TennisGameResult("Doubles 3", callan, cody, "Aarush Bhutkar / Marco Dungca", "6-0,6-0", true));
+
+        msj.addMatch(moreau);
+
+        //VS Logan (3.13.2025)
+        TennisMatch logan1 = new TennisMatch("Logan", "3/13/25");
+        //SINGLES
+        logan1.addResult(new TennisGameResult("Singles 1", abhay, null, "Devan Perumal", "3-6, 3-6", false));
+        logan1.addResult(new TennisGameResult("Singles 2", matthew, null, "Abel Singh", "4-6, 2-6", false));
+        logan1.addResult(new TennisGameResult("Singles 3", caden, null, "Ayush Keni", "3-6, 2-6", false));
+        logan1.addResult(new TennisGameResult("Singles 4", arav, null, "Zeeshan Siddiqui", "1-6, 0-6", false));
+        //DOUBLES
+        logan1.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Adhrit Mishra / Aryan Chaturvedi", "6-3, 6-3", true));
+        logan1.addResult(new TennisGameResult("Doubles 2", vittesh, william, "Aaron Daley / Tejpaul Bains", "6-4, 6-3", true));
+        logan1.addResult(new TennisGameResult("Doubles 3", callan, cody, "Abhinav Prasanna / Lucas Zeng", "6-4, 7-5", true));
+
+        msj.addMatch(logan1);
+
+        //VS Washington (3.18.2025)
+        TennisMatch washington1 = new TennisMatch("Washington", "3/18/25");
+        //SINGLES
+        washington1.addResult(new TennisGameResult("Singles 1", nikhil, null, "Aryan Gupta", "6-3, 6-1", true));
+        washington1.addResult(new TennisGameResult("Singles 2", yash, null, "Harshit Singh", "6-3, 6-2", true));
+        washington1.addResult(new TennisGameResult("Singles 3", vittesh, null, "Bryan Lee", "6-0, 6-0", true));
+        washington1.addResult(new TennisGameResult("Singles 4", caden, null, "Shreyan Das", "6-0, 6-0", true));
+        //DOUBLES
+        washington1.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Aaryan Mishra / Pratyush Sharma", "6-2, 6-1", true));
+        washington1.addResult(new TennisGameResult("Doubles 2", howard, william, "Arjun Chandra / Pranav Balaji", "6-0, 6-1", true));
+        washington1.addResult(new TennisGameResult("Doubles 3", callan, cody, "Jay Patel / Kartik Bhandari", "6-0, 6-0", true));
+
+        msj.addMatch(washington1);
+
+        //VS Irvington (3.20.2025)
+        TennisMatch irvington1 = new TennisMatch("Irvington", "3/20/25");
+        //SINGLES
+        irvington1.addResult(new TennisGameResult("Singles 1", nikhil, null, "Ryan Shen", "6-1, 6-3", true));
+        irvington1.addResult(new TennisGameResult("Singles 2", yash, null, "Jaden Lin", "6-3, 6-2", true));
+        irvington1.addResult(new TennisGameResult("Singles 3", vittesh, null, "Aditya Iyer", "6-1, 6-2", true));
+        irvington1.addResult(new TennisGameResult("Singles 4", caden, null, "Jason Wang", "6-2, 6-3", true));
+        //DOUBLES
+        irvington1.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Kevin Sun / Ethan Chen", "6-3, 6-2", true));
+        irvington1.addResult(new TennisGameResult("Doubles 2", howard, william, "Daniel Li / Ryan Yu", "6-1, 6-2", true));
+        irvington1.addResult(new TennisGameResult("Doubles 3", callan, cody, "Alex Wong / Brandon Hu", "6-2, 6-3", true));
+
+        msj.addMatch(irvington1);
+
+        //VS Newark (3.25.2025)
+        TennisMatch newark1 = new TennisMatch("Newark", "3/25/25");
+        //SINGLES
+        newark1.addResult(new TennisGameResult("Singles 1", nikhil, null, "Arjun Sinha", "6-1, 6-2", true));
+        newark1.addResult(new TennisGameResult("Singles 2", yash, null, "Siddharth Rao", "6-2, 6-3", true));
+        newark1.addResult(new TennisGameResult("Singles 3", vittesh, null, "Kabir Mehta", "6-0, 6-1", true));
+        newark1.addResult(new TennisGameResult("Singles 4", caden, null, "Rohan Gupta", "6-0, 6-1", true));
+        //DOUBLES
+        newark1.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Dev Shah / Ankit Patel", "6-1, 6-2", true));
+        newark1.addResult(new TennisGameResult("Doubles 2", howard, william, "Jay Desai / Yash Patel", "6-0, 6-0", true));
+        newark1.addResult(new TennisGameResult("Doubles 3", callan, cody, "Dhruv Mehta / Aaryan Shah", "6-0, 6-0", true));
+
+        msj.addMatch(newark1);
+
+        //VS American2 (3.27.2025)
+        TennisMatch american2 = new TennisMatch("American", "3/27/25");
+        //SINGLES
+        american2.addResult(new TennisGameResult("Singles 1", nikhil, null, "Vihaan Dahiya", "6-2, 6-2", true));
+        american2.addResult(new TennisGameResult("Singles 2", yash, null, "Agasthya Jampani", "4-6, 3-6", false));
+        american2.addResult(new TennisGameResult("Singles 3", vittesh, null, "Daniel Lu", "3-6, 4-6", false));
+        american2.addResult(new TennisGameResult("Singles 4", caden, null, "Jason Li", "6-2, 6-3", true));
+        //DOUBLES
+        american2.addResult(new TennisGameResult("Doubles 1", jayden, abhay, "Joshua Dong / Nikhil Sinha", "6-3, 6-2", true));
+        american2.addResult(new TennisGameResult("Doubles 2", howard, archit, "Krish Patel / Pratham Gandhi", "5-7, 4-6", false));
+        american2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Jayden Liu / Sanjay Thirumalai", "6-3, 6-4", true));
+
+        msj.addMatch(american2);
+
+        //VS Kennedy2 (4.1.2025)
+        TennisMatch kennedy2 = new TennisMatch("Kennedy", "4/1/25");
+        //SINGLES
+        kennedy2.addResult(new TennisGameResult("Singles 1", yash, null, "Dhruv Singh", "6-0, 6-0", true));
+        kennedy2.addResult(new TennisGameResult("Singles 2", vittesh, null, "Saarthak Korde", "6-2, 6-1", true));
+        kennedy2.addResult(new TennisGameResult("Singles 3", archit, null, "Abhi Vaddepaty", "6-0, 6-0", true));
+        kennedy2.addResult(new TennisGameResult("Singles 4", arav, null, "Default", "Default", true));
+        //DOUBLES
+        kennedy2.addResult(new TennisGameResult("Doubles 1", matthew, caden, "Shivash Negi / Karan Singh", "6-0, 6-0", true));
+        kennedy2.addResult(new TennisGameResult("Doubles 2", howard, william, "Sathvik Polepalli / Gavin Crum", "6-0, 6-0", true));
+        kennedy2.addResult(new TennisGameResult("Doubles 3", patrick, kaiden, "Tanush Yedal / Leo Ahntholz", "6-0, 6-0", true));
+
+        msj.addMatch(kennedy2);
+
+        //VS Logan2 (4.2.2025)
+        TennisMatch logan2 = new TennisMatch("Logan", "4/2/25");
+        //SINGLES
+        logan2.addResult(new TennisGameResult("Singles 1", abhay, null, "Devan Perumal", "2-6, 3-6", false));
+        logan2.addResult(new TennisGameResult("Singles 2", matthew, null, "Abel Singh", "3-6, 4-6", false));
+        logan2.addResult(new TennisGameResult("Singles 3", caden, null, "Ayush Keni", "4-6, 2-6", false));
+        logan2.addResult(new TennisGameResult("Singles 4", arav, null, "Zeeshan Siddiqui", "1-6, 0-6", false));
+        //DOUBLES
+        logan2.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Adhrit Mishra / Aryan Chaturvedi", "6-4, 6-3", true));
+        logan2.addResult(new TennisGameResult("Doubles 2", vittesh, william, "Aaron Daley / Tejpaul Bains", "6-3, 6-4", true));
+        logan2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Abhinav Prasanna / Lucas Zeng", "6-4, 7-5", true));
+
+        msj.addMatch(logan2);
+
+        //VS Moreau2 (4.3.2025)
+        TennisMatch moreau2 = new TennisMatch("Moreau", "4/3/25");
+        //SINGLES
+        moreau2.addResult(new TennisGameResult("Singles 1", abhay, null, "Gabe Garcia", "6-4, 6-4", true));
+        moreau2.addResult(new TennisGameResult("Singles 2", matthew, null, "Rayhan Hussain", "6-0, 6-0", true));
+        moreau2.addResult(new TennisGameResult("Singles 3", caden, null, "Mayank Sanav", "6-0, 6-0", true));
+        moreau2.addResult(new TennisGameResult("Singles 4", arav, null, "Alex Zhang", "6-0, 6-0", true));
+        //DOUBLES
+        moreau2.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Ayden Pardola / Aayush Gupta", "6-0, 6-1", true));
+        moreau2.addResult(new TennisGameResult("Doubles 2", vittesh, william, "Ethan Liu / Sam Basa", "6-0, 6-0", true));
+        moreau2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Aarush Bhutkar / Marco Dungca", "6-0, 6-0", true));
+
+        msj.addMatch(moreau2);
+
+        //VS Washington (4.10.2025)
+        TennisMatch washington2 = new TennisMatch("Washington", "4/10/25");
+        //SINGLES
+        washington2.addResult(new TennisGameResult("Singles 1", nikhil, null, "Aryan Gupta", "6-2, 6-2", true));
+        washington2.addResult(new TennisGameResult("Singles 2", yash, null, "Harshit Singh", "6-2, 6-3", true));
+        washington2.addResult(new TennisGameResult("Singles 3", vittesh, null, "Bryan Lee", "6-0, 6-1", true));
+        washington2.addResult(new TennisGameResult("Singles 4", caden, null, "Shreyan Das", "6-0, 6-0", true));
+        //DOUBLES
+        washington2.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Aaryan Mishra / Pratyush Sharma", "6-2, 6-1", true));
+        washington2.addResult(new TennisGameResult("Doubles 2", howard, william, "Arjun Chandra / Pranav Balaji", "6-1, 6-2", true));
+        washington2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Jay Patel / Kartik Bhandari", "6-0, 6-0", true));
+
+        msj.addMatch(washington2);
+
+        //VS Irvington2 (4.15.2025)
+        TennisMatch irvington2 = new TennisMatch("Irvington", "4/15/25");
+        //SINGLES
+        irvington2.addResult(new TennisGameResult("Singles 1", nikhil, null, "Ryan Shen", "6-2, 6-3", true));
+        irvington2.addResult(new TennisGameResult("Singles 2", yash, null, "Jaden Lin", "6-3, 6-2", true));
+        irvington2.addResult(new TennisGameResult("Singles 3", vittesh, null, "Aditya Iyer", "6-2, 6-2", true));
+        irvington2.addResult(new TennisGameResult("Singles 4", caden, null, "Jason Wang", "6-3, 6-3", true));
+        //DOUBLES
+        irvington2.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Kevin Sun / Ethan Chen", "6-3, 6-2", true));
+        irvington2.addResult(new TennisGameResult("Doubles 2", howard, william, "Daniel Li / Ryan Yu", "6-2, 6-2", true));
+        irvington2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Alex Wong / Brandon Hu", "6-3, 6-3", true));
+
+        msj.addMatch(irvington2);
+
+        //VS Neward2 (4.17.2025)
+        TennisMatch newark2 = new TennisMatch("Newark", "4/17/25");
+        //SINGLES
+        newark2.addResult(new TennisGameResult("Singles 1", nikhil, null, "Arjun Sinha", "6-1, 6-2", true));
+        newark2.addResult(new TennisGameResult("Singles 2", yash, null, "Siddharth Rao", "6-2, 6-3", true));
+        newark2.addResult(new TennisGameResult("Singles 3", vittesh, null, "Kabir Mehta", "6-0, 6-1", true));
+        newark2.addResult(new TennisGameResult("Singles 4", caden, null, "Rohan Gupta", "6-0, 6-1", true));
+        //DOUBLES
+        newark2.addResult(new TennisGameResult("Doubles 1", jayden, archit, "Dev Shah / Ankit Patel", "6-2, 6-2", true));
+        newark2.addResult(new TennisGameResult("Doubles 2", howard, william, "Jay Desai / Yash Patel", "6-1, 6-1", true));
+        newark2.addResult(new TennisGameResult("Doubles 3", callan, cody, "Dhruv Mehta / Aaryan Shah", "6-0, 6-0", true));
+
+        msj.addMatch(newark2);
+        return msj;
+
+    }
+}
