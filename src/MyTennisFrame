@@ -1,0 +1,15 @@
+import javax.swing.*;
+
+public class MyTennisFrame extends JFrame
+{
+    MyTennisFrame(TennisTeam team)
+    {
+        MyTennisPanel panel = new MyTennisPanel(team);
+
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.add(panel);
+        this.pack();
+        this.setLocationRelativeTo(null);
+        this.setVisible(true);
+    }
+}
