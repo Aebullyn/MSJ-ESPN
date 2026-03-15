@@ -1,0 +1,57 @@
+import java.awt.*;
+import javax.swing.*;
+import java.util.*;
+
+public class MyTennisPanel extends JPanel
+{
+    private TennisTeam team;
+
+    MyTennisPanel(TennisTeam t)
+    {
+        team = t;
+        this.setPreferredSize(new Dimension(800,600));
+
+    }
+
+    public void paintComponent(Graphics g)
+    {
+        super.paintComponent(g);
+
+        Graphics2D g2D = (Graphics2D) g;
+
+        g2D.setFont(new Font("Arial", Font.BOLD, 32));
+        g2D.drawString("Mission San Jose Tennis", 200, 50);
+
+
+        // ROSTER BOX
+        g2D.setFont(new Font("Arial", Font.BOLD, 20));
+        g2D.drawRect(50,100,300,400);
+        g2D.drawString("Roster", 60,130);
+
+        int y = 160;
+
+        for(TennisPlayer p : team.getRoster())
+        {
+            g2D.setFont(new Font("Arial", Font.PLAIN, 16));
+            g2D.drawString(p.getName(), 70, y);
+            y += 20;
+        }
+
+
+        // MATCHES BOX
+        g2D.setFont(new Font("Arial", Font.BOLD, 20));
+        g2D.drawRect(400,100,350,400);
+        g2D.drawString("Matches", 410,130);
+
+        int y2 = 160;
+
+        for(TennisMatch m : team.getMatches())
+        {
+            g2D.setFont(new Font("Arial", Font.PLAIN, 16));
+            g2D.drawString(m.getOpponent() + "   " + m.getDate(), 420, y2);
+            y2 += 25;
+        }
+
+
+    }
+}
