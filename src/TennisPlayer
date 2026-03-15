@@ -1,0 +1,48 @@
+public class TennisPlayer {
+
+    private String name;
+
+    private int singlesWins;
+    private int singlesLosses;
+
+    private int doublesWins;
+    private int doublesLosses;
+
+    public TennisPlayer(String name) {
+        this.name = name;
+    }
+
+    public void addSinglesWin() {
+        singlesWins++;
+    }
+
+    public void addSinglesLoss() {
+        singlesLosses++;
+    }
+
+    public void addDoublesWin() {
+        doublesWins++;
+    }
+
+    public void addDoublesLoss() {
+        doublesLosses++;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSinglesRecord() {
+        return singlesWins + "-" + singlesLosses;
+    }
+
+    public String getDoublesRecord() {
+        return doublesWins + "-" + doublesLosses;
+    }
+
+    public String getOverallRecord() {
+        int wins = singlesWins + doublesWins;
+        int losses = singlesLosses + doublesLosses;
+        return wins + "-" + losses;
+    }
+}
