@@ -1,0 +1,144 @@
+public class SoccerData {
+
+    public static SoccerTeam createTeam() {
+
+        // ROSTER
+        SoccerTeam msj = new SoccerTeam("Mission San Jose Girls Soccer");
+
+        SoccerPlayer ariana    = new SoccerPlayer("Ariana P",   1);
+        SoccerPlayer devon     = new SoccerPlayer("Devon",      2);
+        SoccerPlayer kanupriya = new SoccerPlayer("Kanupriya",  3);
+        SoccerPlayer shilpa    = new SoccerPlayer("Shilpa",     4);
+        SoccerPlayer kylie     = new SoccerPlayer("Kylie",      5);
+        SoccerPlayer tina      = new SoccerPlayer("Tina",       6);
+        SoccerPlayer audrey    = new SoccerPlayer("Audrey",     7);
+        SoccerPlayer lina      = new SoccerPlayer("Lina",       8);
+        SoccerPlayer aarika    = new SoccerPlayer("Aarika",     9);
+        SoccerPlayer tanya     = new SoccerPlayer("Tanya",      10);
+        SoccerPlayer rylin     = new SoccerPlayer("Rylin",      11);
+        SoccerPlayer claire    = new SoccerPlayer("Claire",     12);
+        SoccerPlayer amira     = new SoccerPlayer("Amira",      13);
+        SoccerPlayer lara      = new SoccerPlayer("Lara",       14);
+        SoccerPlayer diya      = new SoccerPlayer("Diya",       15);
+        SoccerPlayer siyona    = new SoccerPlayer("Siyona",     16);
+        SoccerPlayer hana      = new SoccerPlayer("Hana",       17);
+        SoccerPlayer adrianna  = new SoccerPlayer("Adrianna",   18);
+        SoccerPlayer ima       = new SoccerPlayer("Ima",        19);
+        SoccerPlayer amina     = new SoccerPlayer("Amina",      20);
+
+        msj.addPlayer(ariana);
+        msj.addPlayer(devon);
+        msj.addPlayer(kanupriya);
+        msj.addPlayer(shilpa);
+        msj.addPlayer(kylie);
+        msj.addPlayer(tina);
+        msj.addPlayer(audrey);
+        msj.addPlayer(lina);
+        msj.addPlayer(aarika);
+        msj.addPlayer(tanya);
+        msj.addPlayer(rylin);
+        msj.addPlayer(claire);
+        msj.addPlayer(amira);
+        msj.addPlayer(lara);
+        msj.addPlayer(diya);
+        msj.addPlayer(siyona);
+        msj.addPlayer(hana);
+        msj.addPlayer(adrianna);
+        msj.addPlayer(ima);
+        msj.addPlayer(amina);
+
+        // MATCH 1: vs Tennyson - 12/12/2025 - WIN 3-1
+        SoccerMatch tennyson = new SoccerMatch("Tennyson", "12/12/25", 3, 1);
+
+        tina.addGoal();       tina.addShotOnGoal();   tina.addShotOnGoal();
+        siyona.addGoal();     siyona.addShotOnGoal(); siyona.addShotOnGoal();
+        amina.addGoal();      amina.addShotOnGoal();
+        tanya.addAssist();    tanya.addShotOnGoal();
+        adrianna.addAssist(); adrianna.addShotOnGoal();
+        rylin.addAssist();
+
+        msj.addMatch(tennyson);
+
+        // MATCH 2: vs American - 12/18/2025 - LOSS 0-3
+        SoccerMatch american = new SoccerMatch("American", "12/18/25", 0, 3);
+
+        tina.addShotOnGoal();
+        siyona.addShotOnGoal();
+        amina.addShotOnGoal();
+
+        msj.addMatch(american);
+
+        // MATCH 3: vs Kennedy - 1/6/2026 - LOSS 0-6
+        SoccerMatch kennedy1 = new SoccerMatch("Kennedy", "1/6/26", 0, 6);
+
+        tina.addShotOnGoal();
+        ariana.addShotOnGoal();
+
+        msj.addMatch(kennedy1);
+
+        // MATCH 4: vs James Logan - 1/13/2026 - LOSS 0-6
+        SoccerMatch logan1 = new SoccerMatch("James Logan", "1/13/26", 0, 6);
+
+        siyona.addShotOnGoal();
+        tanya.addShotOnGoal();
+
+        msj.addMatch(logan1);
+
+        // MATCH 5: vs Irvington - 1/20/2026 - WIN 3-0
+        SoccerMatch irvington1 = new SoccerMatch("Irvington", "1/20/26", 3, 0);
+
+        siyona.addGoal();     siyona.addShotOnGoal(); siyona.addShotOnGoal();
+        amina.addGoal();      amina.addShotOnGoal();  amina.addShotOnGoal();
+        tina.addGoal();       tina.addShotOnGoal();
+        adrianna.addAssist(); adrianna.addShotOnGoal();
+        tanya.addAssist();    tanya.addShotOnGoal();
+        rylin.addAssist();
+
+        msj.addMatch(irvington1);
+
+        // MATCH 6: vs Newark - 1/22/2026 - LOSS 0-6
+        SoccerMatch newark = new SoccerMatch("Newark", "1/22/26", 0, 6);
+
+        tina.addShotOnGoal();
+        ariana.addShotOnGoal();
+        ariana.addShotOnGoal();
+        siyona.addShotOnGoal();
+
+        msj.addMatch(newark);
+
+        // MATCH 7: vs Kennedy - 1/29/2026 - LOSS 0-7
+        SoccerMatch kennedy2 = new SoccerMatch("Kennedy", "1/29/26", 0, 7);
+
+        tina.addShotOnGoal();
+        ariana.addShotOnGoal();
+
+        msj.addMatch(kennedy2);
+
+        // MATCH 8: vs James Logan - 2/5/2026 - LOSS 1-4
+        SoccerMatch logan2 = new SoccerMatch("James Logan", "2/5/26", 1, 4);
+
+        tina.addGoal();       tina.addShotOnGoal();   tina.addShotOnGoal();
+        adrianna.addAssist();
+        siyona.addShotOnGoal();
+        ariana.addShotOnGoal();
+        tanya.addShotOnGoal();
+
+        msj.addMatch(logan2);
+
+        // MATCH 9: vs Irvington - 2/12/2026 - WIN 4-0
+        SoccerMatch irvington2 = new SoccerMatch("Irvington", "2/12/26", 4, 0);
+
+        tina.addGoal();       tina.addShotOnGoal();      tina.addShotOnGoal();
+        adrianna.addGoal();   adrianna.addShotOnGoal();  adrianna.addShotOnGoal();
+        amira.addGoal();      amina.addShotOnGoal();     amina.addShotOnGoal();
+        siyona.addGoal();     siyona.addShotOnGoal();    siyona.addShotOnGoal();
+        tanya.addAssist();    tanya.addShotOnGoal();
+        rylin.addAssist();
+        lina.addAssist();
+        ima.addAssist();
+
+        msj.addMatch(irvington2);
+
+        return msj;
+    }
+}
