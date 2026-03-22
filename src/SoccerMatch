@@ -1,0 +1,44 @@
+public class SoccerMatch {
+
+    private String opponent;
+    private String date;
+    private int missionScore;
+    private int opponentScore;
+
+    public SoccerMatch(String opponent, String date, int missionScore, int opponentScore) {
+        this.opponent = opponent;
+        this.date = date;
+        this.missionScore = missionScore;
+        this.opponentScore = opponentScore;
+    }
+
+    public String getOpponent() {
+        return opponent;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public int getMissionScore() {
+        return missionScore;
+    }
+
+    public int getOpponentScore() {
+        return opponentScore;
+    }
+
+    public boolean isWin() {
+        return missionScore > opponentScore;
+    }
+
+    public String getResult() {
+        if (missionScore > opponentScore) return "W";
+        if (missionScore < opponentScore) return "L";
+        return "T";
+    }
+
+    public String toString() {
+        return opponent + " (" + date + ") " + getResult() + " " + missionScore + "-" + opponentScore;
+    }
+}
