@@ -1,0 +1,44 @@
+public class BasketballMatch {
+
+    private String opponent;
+    private String date;
+    private int missionScore;
+    private int opponentScore;
+    private int[] missionQuarters;   // points per quarter (length 4, or more if OT)
+    private int[] opponentQuarters;
+
+    public BasketballMatch(String opponent, String date, int missionScore, int opponentScore) {
+        this.opponent = opponent;
+        this.date = date;
+        this.missionScore = missionScore;
+        this.opponentScore = opponentScore;
+    }
+
+    public BasketballMatch(String opponent, String date, int missionScore, int opponentScore,
+                           int[] missionQuarters, int[] opponentQuarters) {
+        this(opponent, date, missionScore, opponentScore);
+        this.missionQuarters = missionQuarters;
+        this.opponentQuarters = opponentQuarters;
+    }
+
+    public boolean isWin() {
+        return missionScore > opponentScore;
+    }
+
+    public String getResult() {
+        if (missionScore > opponentScore) return "W";
+        if (missionScore < opponentScore) return "L";
+        return "T";
+    }
+
+    public String getOpponent()      { return opponent; }
+    public String getDate()          { return date; }
+    public int getMissionScore()     { return missionScore; }
+    public int getOpponentScore()    { return opponentScore; }
+    public int[] getMissionQuarters()   { return missionQuarters; }
+    public int[] getOpponentQuarters()  { return opponentQuarters; }
+
+    public String toString() {
+        return opponent + " (" + date + ") " + getResult() + " " + missionScore + "-" + opponentScore;
+    }
+}
