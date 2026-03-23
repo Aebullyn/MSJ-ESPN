@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class BasketballTeam {
+
+    private String teamName;
+    private ArrayList<BasketballPlayer> roster;
+    private ArrayList<BasketballMatch> matches;
+
+    public BasketballTeam(String teamName) {
+        this.teamName = teamName;
+        roster = new ArrayList<>();
+        matches = new ArrayList<>();
+    }
+
+    public void addPlayer(BasketballPlayer p) { roster.add(p); }
+    public void addMatch(BasketballMatch m)    { matches.add(m); }
+
+    public ArrayList<BasketballPlayer> getRoster()  { return roster; }
+    public ArrayList<BasketballMatch> getMatches()  { return matches; }
+    public String getTeamName()                     { return teamName; }
+
+    public int getWins() {
+        int wins = 0;
+        for (BasketballMatch m : matches)
+            if (m.isWin()) wins++;
+        return wins;
+    }
+
+    public int getLosses() {
+        int losses = 0;
+        for (BasketballMatch m : matches)
+            if (!m.isWin()) losses++;
+        return losses;
+    }
+
+    public String getRecord() {
+        return getWins() + "-" + getLosses();
+    }
+}
