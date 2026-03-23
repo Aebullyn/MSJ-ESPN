@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Teams</title>
+<style>
+body{font-family:Arial;background:#eee}
+.card{background:white;margin:20px;padding:15px;border-radius:10px}
+img{width:100%;max-width:300px}
+</style>
+</head>
+<body>
+<h1 id="title"></h1>
+<div class="card">
+<h2>Girls Team</h2>
+<img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+<button onclick="goFantasy('girls')">Fantasy</button>
+</div>
+
+<div class="card">
+<h2>Boys Team</h2>
+<img src="https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf">
+<button onclick="goFantasy('boys')">Fantasy</button>
+</div>
+
+<script>
+const urlParams=new URLSearchParams(window.location.search);
+const sport=urlParams.get('sport')||'sport';
+document.getElementById('title').innerText=sport.toUpperCase();
+function goFantasy(team){window.location.href=`fantasy.html?sport=${sport}&team=${team}`}
+</script>
+</body>
+</html>

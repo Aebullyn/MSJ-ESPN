@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+button{padding:8px 12px;margin-top:10px;cursor:pointer}
+</style>
+</head>
+<body>
+<header>
+<h1>MSPN</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="teams.html">Teams</a>
+<a href="fantasy.html">Fantasy</a>
+<a href="volunteer.html">Volunteer</a>
+</nav>
+</header>
+
+<div class="sports">
+<span onclick="go('basketball')">Basketball</span>
+<span onclick="go('soccer')">Soccer</span>
+<span onclick="go('baseball')">Baseball</span>
+</div>
+
+<div class="card">
+<h2>Live Scoreboard</h2>
+<div id="scoreboard"></div>
+</div>
+
+<script>
+function go(s){window.location.href=`teams.html?sport=${s}`}
+
+let game={team1:"MSJ",team2:"Irvington",score1:60,score2:58};
+function renderScore(){
+ document.getElementById('scoreboard').innerHTML=
+ `<div class='score'>${game.team1} ${game.score1} - ${game.score2} ${game.team2}</div>
+ <button onclick='updateScore()'>Update Score</button>`;
+}
+function updateScore(){
+ game.score1+=Math.floor(Math.random()*3);
+ game.score2+=Math.floor(Math.random()*3);
+ renderScore();
+}
+renderScore();
+</script>
+</body>
+</html>

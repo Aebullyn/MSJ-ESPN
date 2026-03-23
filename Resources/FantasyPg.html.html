@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+.card{background:white;margin:20px;padding:15px;border-radius:10px}
+</style>
+</head>
+<body>
+<h1>Fantasy Team Builder</h1>
+<div id="roster"></div>
+
+<script>
+const urlParams=new URLSearchParams(window.location.search);
+const sport=urlParams.get('sport');
+
+// REALISTIC ROSTERS
+const rosters={
+ basketball:["Lee","Nguyen","Patel","Garcia"],
+ soccer:["Kim","Tran","Singh","Lopez"],
+ baseball:["Chen","Wang","Brown","Davis"]
+};
+
+const players=rosters[sport]||[];
+const container=document.getElementById('roster');
+
+players.forEach(p=>{
+ let div=document.createElement('div');
+ div.className='card';
+ div.innerHTML=`${p} <button onclick="add('${p}')">Add</button>`;
+ container.appendChild(div);
+});
+
+function add(name){
+ let team=JSON.parse(localStorage.getItem('fantasy')||"[]");
+ team.push(name);
+ localStorage.setItem('fantasy',JSON.stringify(team));
+ alert(name+" added!");
+}
+</script>
+</body>
+</html>
