@@ -1,0 +1,80 @@
+public class BasketballPlayer {
+
+    private String name;
+    private int number;
+    private String year; // Sr, Jr, So, Fr
+
+    // Shooting
+    private int points;
+    private int fgm;
+    private int fga;
+    private int threePM;
+    private int threePA;
+    private int ftm;
+    private int fta;
+
+    // Rebounds
+    private int oreb;
+    private int dreb;
+
+    // Other
+    private int assists;
+    private int steals;
+    private int blocks;
+    private int turnovers;
+    private int fouls;
+
+    public BasketballPlayer(String name, int number, String year) {
+        this.name = name;
+        this.number = number;
+        this.year = year;
+    }
+
+    public void addPoints(int p)     { points += p; }
+    public void addFGM(int n)        { fgm += n; }
+    public void addFGA(int n)        { fga += n; }
+    public void addThreePM(int n)    { threePM += n; }
+    public void addThreePA(int n)    { threePA += n; }
+    public void addFTM(int n)        { ftm += n; }
+    public void addFTA(int n)        { fta += n; }
+    public void addOReb(int n)       { oreb += n; }
+    public void addDReb(int n)       { dreb += n; }
+    public void addAssists(int n)    { assists += n; }
+    public void addSteals(int n)     { steals += n; }
+    public void addBlocks(int n)     { blocks += n; }
+    public void addTurnovers(int n)  { turnovers += n; }
+    public void addFouls(int n)      { fouls += n; }
+
+    public String getName()      { return name; }
+    public int getNumber()       { return number; }
+    public String getYear()      { return year; }
+    public int getPoints()       { return points; }
+    public int getFGM()          { return fgm; }
+    public int getFGA()          { return fga; }
+    public int getThreePM()      { return threePM; }
+    public int getThreePA()      { return threePA; }
+    public int getFTM()          { return ftm; }
+    public int getFTA()          { return fta; }
+    public int getOReb()         { return oreb; }
+    public int getDReb()         { return dreb; }
+    public int getTotalReb()     { return oreb + dreb; }
+    public int getAssists()      { return assists; }
+    public int getSteals()       { return steals; }
+    public int getBlocks()       { return blocks; }
+    public int getTurnovers()    { return turnovers; }
+    public int getFouls()        { return fouls; }
+
+    public String toString() {
+        return "#" + number + " " + name + " (" + year + ")" +
+                " | Pts: " + points +
+                " | FG: " + fgm + "/" + fga +
+                " | 3P: " + threePM + "/" + threePA +
+                " | FT: " + ftm + "/" + fta +
+                " | Reb: " + getTotalReb() +
+                " | Ast: " + assists +
+                " | Stl: " + steals +
+                " | Blk: " + blocks +
+                " | TO: " + turnovers +
+                " | PF: " + fouls;
+    }
+}
