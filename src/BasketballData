@@ -1,0 +1,392 @@
+public class BasketballData {
+
+    public static BasketballTeam createTeam() {
+
+        BasketballTeam msj = new BasketballTeam("Mission San Jose Boys Basketball");
+
+        // ROSTER
+        BasketballPlayer nikhil  = new BasketballPlayer("Nikhil Cidambi",  1,  "Sr");
+        BasketballPlayer zerek   = new BasketballPlayer("Zerek Kao",        4,  "Jr");
+        BasketballPlayer leland  = new BasketballPlayer("Leland Yu",        14, "So");
+        BasketballPlayer jadon   = new BasketballPlayer("Jadon Li",         20, "Jr");
+        BasketballPlayer jalen   = new BasketballPlayer("J. Standfield",    23, "Sr");
+        BasketballPlayer will    = new BasketballPlayer("Will Chapman",     32, "So");
+        BasketballPlayer aadi    = new BasketballPlayer("Aadi Yadav",       34, "Sr");
+        BasketballPlayer brandon = new BasketballPlayer("Brandon White",    45, "Sr");
+        BasketballPlayer michael = new BasketballPlayer("Michael Hung",     5,  "Jr");
+        BasketballPlayer pranav  = new BasketballPlayer("P. Kanuparthi",    24, "Jr");
+        BasketballPlayer sai     = new BasketballPlayer("S. Vasamsetti",    30, "Jr");
+        BasketballPlayer siddh   = new BasketballPlayer("S. Parampalli",    40, "Jr");
+
+        msj.addPlayer(nikhil);
+        msj.addPlayer(zerek);
+        msj.addPlayer(leland);
+        msj.addPlayer(jadon);
+        msj.addPlayer(jalen);
+        msj.addPlayer(will);
+        msj.addPlayer(aadi);
+        msj.addPlayer(brandon);
+        msj.addPlayer(michael);
+        msj.addPlayer(pranav);
+        msj.addPlayer(sai);
+        msj.addPlayer(siddh);
+
+        // GAME 1: vs San Lorenzo - WIN 61-56
+        
+        BasketballMatch sanLorenzo = new BasketballMatch("San Lorenzo", "TBD", 61, 56,
+                new int[]{10, 13, 23, 15}, new int[]{7, 15, 20, 14});
+
+        nikhil.addPoints(25); nikhil.addFGM(5); nikhil.addFGA(7); nikhil.addThreePM(0); nikhil.addThreePA(0); nikhil.addFTM(15); nikhil.addFTA(20); nikhil.addOReb(0); nikhil.addDReb(1); nikhil.addAssists(2); nikhil.addSteals(0); nikhil.addBlocks(1); nikhil.addTurnovers(0); nikhil.addFouls(4);
+        zerek.addPoints(5); zerek.addFGM(1); zerek.addFGA(4); zerek.addThreePM(1); zerek.addThreePA(2); zerek.addFTM(2); zerek.addFTA(4); zerek.addOReb(0); zerek.addDReb(0); zerek.addAssists(5); zerek.addSteals(1); zerek.addBlocks(0); zerek.addTurnovers(5); zerek.addFouls(4);
+        leland.addPoints(2); leland.addFGM(1); leland.addFGA(2); leland.addThreePM(0); leland.addThreePA(1); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(1); leland.addAssists(0); leland.addSteals(0); leland.addBlocks(0); leland.addTurnovers(2); leland.addFouls(0);
+        jadon.addPoints(1); jadon.addFGM(0); jadon.addFGA(2); jadon.addThreePM(0); jadon.addThreePA(1); jadon.addFTM(1); jadon.addFTA(2); jadon.addOReb(0); jadon.addDReb(1); jadon.addAssists(1); jadon.addSteals(1); jadon.addBlocks(0); jadon.addTurnovers(5); jadon.addFouls(5);
+        jalen.addPoints(6); jalen.addFGM(1); jalen.addFGA(7); jalen.addThreePM(1); jalen.addThreePA(3); jalen.addFTM(3); jalen.addFTA(8); jalen.addOReb(0); jalen.addDReb(2); jalen.addAssists(2); jalen.addSteals(3); jalen.addBlocks(1); jalen.addTurnovers(1); jalen.addFouls(3);
+        will.addPoints(13); will.addFGM(4); will.addFGA(9); will.addThreePM(1); will.addThreePA(2); will.addFTM(4); will.addFTA(4); will.addOReb(1); will.addDReb(1); will.addAssists(2); will.addSteals(1); will.addBlocks(5); will.addTurnovers(3); will.addFouls(3);
+        aadi.addPoints(3); aadi.addFGM(1); aadi.addFGA(2); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(2); aadi.addOReb(1); aadi.addDReb(2); aadi.addAssists(0); aadi.addSteals(1); aadi.addBlocks(0); aadi.addTurnovers(1); aadi.addFouls(1);
+        brandon.addPoints(4); brandon.addFGM(1); brandon.addFGA(9); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(2); brandon.addFTA(2); brandon.addOReb(5); brandon.addDReb(9); brandon.addAssists(4); brandon.addSteals(3); brandon.addBlocks(3); brandon.addTurnovers(3); brandon.addFouls(1);
+
+        msj.addMatch(sanLorenzo);
+
+        // GAME 2: vs San Marin - LOSS 46-56 (playoff)
+        BasketballMatch sanMarin1 = new BasketballMatch("San Marin", "TBD", 46, 56);
+
+        nikhil.addPoints(6); nikhil.addFGM(2); nikhil.addFGA(6); nikhil.addThreePM(0); nikhil.addThreePA(2); nikhil.addFTM(2); nikhil.addFTA(4); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(4); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(4); nikhil.addFouls(1);
+        zerek.addPoints(2); zerek.addFGM(1); zerek.addFGA(2); zerek.addThreePM(1); zerek.addThreePA(1); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(1); zerek.addBlocks(0); zerek.addTurnovers(1); zerek.addFouls(1);
+        jalen.addPoints(7); jalen.addFGM(1); jalen.addFGA(5); jalen.addThreePM(1); jalen.addThreePA(4); jalen.addFTM(4); jalen.addFTA(7); jalen.addOReb(1); jalen.addDReb(5); jalen.addAssists(6); jalen.addSteals(0); jalen.addBlocks(0); jalen.addTurnovers(6); jalen.addFouls(3);
+        will.addPoints(4); will.addFGM(1); will.addFGA(9); will.addThreePM(1); will.addThreePA(1); will.addFTM(1); will.addFTA(2); will.addOReb(1); will.addDReb(0); will.addAssists(1); will.addSteals(4); will.addBlocks(2); will.addTurnovers(4); will.addFouls(2);
+        aadi.addPoints(6); aadi.addFGM(3); aadi.addFGA(5); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(1); aadi.addDReb(4); aadi.addAssists(5); aadi.addSteals(0); aadi.addBlocks(0); aadi.addTurnovers(1); aadi.addFouls(2);
+        brandon.addPoints(6); brandon.addFGM(2); brandon.addFGA(4); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(2); brandon.addFTA(2); brandon.addOReb(0); brandon.addDReb(9); brandon.addAssists(9); brandon.addSteals(4); brandon.addBlocks(5); brandon.addTurnovers(2); brandon.addFouls(2);
+
+        msj.addMatch(sanMarin1);
+
+        // GAME 3: vs Weed - WIN 62-58 (playoff)
+
+BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
+                new int[]{22, 14, 9, 17}, new int[]{9, 17, 22, 10});
+
+        nikhil.addPoints(6); nikhil.addFGM(4); nikhil.addFGA(6); nikhil.addThreePM(0); nikhil.addThreePA(0); nikhil.addFTM(2); nikhil.addFTA(4); nikhil.addOReb(1); nikhil.addDReb(1); nikhil.addAssists(2); nikhil.addSteals(5); nikhil.addBlocks(2); nikhil.addTurnovers(0); nikhil.addFouls(3);
+        zerek.addPoints(3); zerek.addFGM(0); zerek.addFGA(2); zerek.addThreePM(1); zerek.addThreePA(2); zerek.addFTM(0); zerek.addFTA(2); zerek.addOReb(0); zerek.addDReb(0); zerek.addAssists(1); zerek.addSteals(1); zerek.addBlocks(0); zerek.addTurnovers(3); zerek.addFouls(2);
+        jalen.addPoints(10); jalen.addFGM(1); jalen.addFGA(8); jalen.addThreePM(1); jalen.addThreePA(3); jalen.addFTM(7); jalen.addFTA(12); jalen.addOReb(0); jalen.addDReb(3); jalen.addAssists(3); jalen.addSteals(1); jalen.addBlocks(2); jalen.addTurnovers(0); jalen.addFouls(3);
+        will.addPoints(14); will.addFGM(4); will.addFGA(13); will.addThreePM(2); will.addThreePA(6); will.addFTM(4); will.addFTA(8); will.addOReb(2); will.addDReb(2); will.addAssists(4); will.addSteals(0); will.addBlocks(4); will.addTurnovers(2); will.addFouls(2);
+        aadi.addPoints(5); aadi.addFGM(2); aadi.addFGA(5); aadi.addThreePM(0); aadi.addThreePA(2); aadi.addFTM(1); aadi.addFTA(5); aadi.addOReb(2); aadi.addDReb(0); aadi.addAssists(1); aadi.addSteals(3); aadi.addBlocks(4); aadi.addAssists(2); aadi.addTurnovers(2); aadi.addFouls(2);
+        brandon.addPoints(10); brandon.addFGM(4); brandon.addFGA(7); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(2); brandon.addFTA(5); brandon.addOReb(0); brandon.addDReb(2); brandon.addAssists(4); brandon.addSteals(6); brandon.addBlocks(6); brandon.addTurnovers(2); brandon.addFouls(3);
+
+        msj.addMatch(weed);
+
+        // GAME 4: vs Oroville - WIN 56-46 (playoff)
+        BasketballMatch oroville = new BasketballMatch("Oroville", "TBD", 56, 46);
+
+        nikhil.addPoints(5); nikhil.addFGM(2); nikhil.addFGA(5); nikhil.addThreePM(0); nikhil.addThreePA(2); nikhil.addFTM(1); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(4); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(3); nikhil.addFouls(3);
+        zerek.addPoints(2); zerek.addFGM(1); zerek.addFGA(3); zerek.addThreePM(0); zerek.addThreePA(0); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(2); zerek.addAssists(2); zerek.addSteals(1); zerek.addBlocks(0); zerek.addTurnovers(2); zerek.addFouls(3);
+        jalen.addPoints(5); jalen.addFGM(1); jalen.addFGA(5); jalen.addThreePM(3); jalen.addThreePA(5); jalen.addFTM(6); jalen.addFTA(8); jalen.addOReb(1); jalen.addDReb(0); jalen.addAssists(5); jalen.addSteals(5); jalen.addBlocks(2); jalen.addTurnovers(2); jalen.addFouls(0);
+        will.addPoints(7); will.addFGM(1); will.addFGA(1); will.addThreePM(1); will.addThreePA(6); will.addFTM(4); will.addFTA(7); will.addOReb(4); will.addDReb(7); will.addAssists(5); will.addSteals(7); will.addBlocks(5); will.addTurnovers(7); will.addFouls(5);
+        aadi.addPoints(0); aadi.addFGM(0); aadi.addFGA(1); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(3); aadi.addOReb(0); aadi.addDReb(1); aadi.addAssists(1); aadi.addSteals(1); aadi.addBlocks(0); aadi.addTurnovers(0); aadi.addFouls(0);
+        brandon.addPoints(8); brandon.addFGM(3); brandon.addFGA(8); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(2); brandon.addFTA(2); brandon.addOReb(3); brandon.addDReb(1); brandon.addAssists(0); brandon.addSteals(1); brandon.addSteals(3); brandon.addBlocks(4); brandon.addTurnovers(3); brandon.addFouls(2);
+
+        msj.addMatch(oroville);
+
+        // GAME 5: vs Rancho Cotate - LOSS 46-40
+        
+        BasketballMatch ranchoCotate = new BasketballMatch("Rancho Cotate", "TBD", 46, 40,
+                new int[]{6, 16, 7, 17}, new int[]{14, 9, 7, 10});
+
+        nikhil.addPoints(0); nikhil.addFGM(0); nikhil.addFGA(6); nikhil.addThreePM(0); nikhil.addThreePA(4); nikhil.addFTM(0); nikhil.addFTA(0); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(2); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(1);
+        zerek.addPoints(4); zerek.addFGM(2); zerek.addFGA(3); zerek.addThreePM(0); zerek.addThreePA(1); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(2); zerek.addAssists(1); zerek.addSteals(3); zerek.addSteals(5); zerek.addBlocks(0); zerek.addTurnovers(1); zerek.addFouls(0);
+        jalen.addPoints(8); jalen.addFGM(1); jalen.addFGA(9); jalen.addThreePM(2); jalen.addThreePA(7); jalen.addFTM(2); jalen.addFTA(9); jalen.addOReb(2); jalen.addDReb(8); jalen.addAssists(1); jalen.addSteals(0); jalen.addBlocks(2); jalen.addTurnovers(1); jalen.addFouls(0);
+        will.addPoints(9); will.addFGM(4); will.addFGA(14); will.addThreePM(1); will.addThreePA(5); will.addFTM(0); will.addFTA(0); will.addOReb(2); will.addDReb(1); will.addAssists(3); will.addSteals(3); will.addBlocks(3); will.addTurnovers(4); will.addFouls(1);
+        aadi.addPoints(3); aadi.addFGM(1); aadi.addFGA(4); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(2); aadi.addOReb(2); aadi.addDReb(7); aadi.addAssists(9); aadi.addSteals(1); aadi.addBlocks(1); aadi.addTurnovers(2); aadi.addFouls(1);
+        brandon.addPoints(7); brandon.addFGM(3); brandon.addFGA(9); brandon.addThreePM(0); brandon.addThreePA(3); brandon.addFTM(1); brandon.addFTA(2); brandon.addOReb(2); brandon.addDReb(5); brandon.addAssists(3); brandon.addSteals(0); brandon.addBlocks(0); brandon.addTurnovers(0); brandon.addFouls(0);
+
+        msj.addMatch(ranchoCotate);
+
+        // GAME 6: vs San Marin - WIN 49-45
+        
+
+        nikhil.addPoints(7); nikhil.addFGM(2); nikhil.addFGA(3); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(2); nikhil.addFTA(3); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(3); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(2); nikhil.addFouls(2);
+        zerek.addPoints(4); zerek.addFGM(2); zerek.addFGA(6); zerek.addThreePM(0); zerek.addThreePA(2); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(3); zerek.addAssists(3); zerek.addSteals(1); zerek.addBlocks(0); zerek.addTurnovers(0); zerek.addFouls(3);
+        jalen.addPoints(9); jalen.addFGM(4); jalen.addFGA(9); jalen.addThreePM(0); jalen.addThreePA(2); jalen.addFTM(1); jalen.addFTA(2); jalen.addOReb(2); jalen.addDReb(6); jalen.addAssists(8); jalen.addSteals(3); jalen.addBlocks(1); jalen.addTurnovers(0); jalen.addFouls(6);
+        will.addPoints(5); will.addFGM(1); will.addFGA(5); will.addThreePM(0); will.addThreePA(3); will.addFTM(3); will.addFTA(4); will.addOReb(1); will.addDReb(2); will.addAssists(3); will.addSteals(5); will.addBlocks(2); will.addTurnovers(0); will.addFouls(1);
+        aadi.addPoints(5); aadi.addFGM(2); aadi.addFGA(4); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(3); aadi.addOReb(1); aadi.addDReb(4); aadi.addAssists(5); aadi.addSteals(1); aadi.addBlocks(0); aadi.addTurnovers(1); aadi.addFouls(0);
+        brandon.addPoints(13); brandon.addFGM(5); brandon.addFGA(7); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(3); brandon.addFTA(8); brandon.addOReb(2); brandon.addDReb(1); brandon.addAssists(1); brandon.addSteals(3); brandon.addBlocks(4); brandon.addTurnovers(6); brandon.addFouls(4);
+
+        msj.addMatch(sanMarin2);
+
+        // GAME 7: vs Jesse M. Bethel - WIN 55-52
+       
+
+        nikhil.addPoints(1); nikhil.addFGM(0); nikhil.addFGA(0); nikhil.addThreePM(0); nikhil.addThreePA(1); nikhil.addFTM(1); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(1); nikhil.addAssists(1); nikhil.addSteals(0); nikhil.addBlocks(0); nikhil.addTurnovers(4); nikhil.addFouls(1);
+        zerek.addPoints(4); zerek.addFGM(2); zerek.addFGA(2); zerek.addThreePM(0); zerek.addThreePA(0); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(5); zerek.addBlocks(3); zerek.addTurnovers(0); zerek.addFouls(1);
+        jalen.addPoints(5); jalen.addFGM(1); jalen.addFGA(4); jalen.addThreePM(0); jalen.addThreePA(1); jalen.addFTM(3); jalen.addFTA(8); jalen.addOReb(1); jalen.addDReb(7); jalen.addAssists(8); jalen.addSteals(4); jalen.addBlocks(3); jalen.addTurnovers(0); jalen.addFouls(4);
+        will.addPoints(17); will.addFGM(7); will.addFGA(17); will.addThreePM(2); will.addThreePA(5); will.addFTM(1); will.addFTA(2); will.addOReb(0); will.addDReb(1); will.addAssists(1); will.addSteals(4); will.addBlocks(1); will.addTurnovers(2); will.addFouls(4);
+        aadi.addPoints(4); aadi.addFGM(2); aadi.addFGA(4); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(1); aadi.addAssists(1); aadi.addSteals(2); aadi.addBlocks(0); aadi.addTurnovers(1); aadi.addFouls(3);
+        brandon.addPoints(15); brandon.addFGM(5); brandon.addFGA(11); brandon.addThreePM(0); brandon.addThreePA(2); brandon.addFTM(5); brandon.addFTA(9); brandon.addOReb(0); brandon.addDReb(6); brandon.addAssists(4); brandon.addSteals(1); brandon.addBlocks(0); brandon.addTurnovers(4); brandon.addFouls(8); brandon.addFouls(3);
+
+        msj.addMatch(bethel);
+
+        // GAME 8: vs Newark Memorial - WIN 57-54
+        
+        BasketballMatch newark = new BasketballMatch("Newark Memorial", "TBD", 57, 54,
+                new int[]{17, 16, 12, 12}, new int[]{17, 14, 7, 16});
+
+        nikhil.addPoints(6); nikhil.addFGM(2); nikhil.addFGA(6); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(2); nikhil.addFTA(4); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(6); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(1);
+        zerek.addPoints(8); zerek.addFGM(3); zerek.addFGA(4); zerek.addThreePM(2); zerek.addThreePA(3); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(0); zerek.addBlocks(2); zerek.addTurnovers(1); zerek.addFouls(1);
+        leland.addPoints(3); leland.addFGM(1); leland.addFGA(3); leland.addThreePM(1); leland.addThreePA(3); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(4); leland.addBlocks(0); leland.addTurnovers(0); leland.addFouls(1);
+        jalen.addPoints(6); jalen.addFGM(1); jalen.addFGA(2); jalen.addThreePM(1); jalen.addThreePA(2); jalen.addFTM(3); jalen.addFTA(4); jalen.addOReb(0); jalen.addDReb(7); jalen.addAssists(7); jalen.addSteals(0); jalen.addBlocks(2); jalen.addTurnovers(0); jalen.addFouls(1);
+        will.addPoints(13); will.addFGM(5); will.addFGA(7); will.addThreePM(2); will.addThreePA(3); will.addFTM(1); will.addFTA(3); will.addOReb(0); will.addDReb(1); will.addAssists(1); will.addSteals(3); will.addBlocks(4); will.addTurnovers(1); will.addFouls(2);
+        aadi.addPoints(0); aadi.addFGM(0); aadi.addFGA(3); aadi.addOReb(0); aadi.addDReb(0); aadi.addAssists(1); aadi.addSteals(2); aadi.addBlocks(3); aadi.addTurnovers(1); aadi.addFouls(0);
+        brandon.addPoints(9); brandon.addFGM(3); brandon.addFGA(9); brandon.addThreePM(1); brandon.addThreePA(4); brandon.addFTM(2); brandon.addFTA(5); brandon.addOReb(1); brandon.addDReb(1); brandon.addAssists(1); brandon.addSteals(1); brandon.addBlocks(2); brandon.addTurnovers(3); brandon.addFouls(1);
+
+        msj.addMatch(newark);
+
+        // GAME 9: vs Irvington - WIN 66-46 (MSJ wins all 4 quarters)
+        
+        BasketballMatch irvington = new BasketballMatch("Irvington", "TBD", 66, 46,
+                new int[]{14, 19, 21, 12}, new int[]{6, 7, 14, 19});
+
+        nikhil.addPoints(10); nikhil.addFGM(3); nikhil.addFGA(7); nikhil.addThreePM(2); nikhil.addThreePA(4); nikhil.addFTM(2); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(5); nikhil.addBlocks(2); nikhil.addTurnovers(0); nikhil.addFouls(2);
+        zerek.addPoints(10); zerek.addFGM(5); zerek.addFGA(6); zerek.addThreePM(0); zerek.addThreePA(0); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(2); zerek.addBlocks(2); zerek.addTurnovers(3); zerek.addFouls(0);
+        michael.addPoints(2); michael.addFGM(1); michael.addFGA(3); michael.addThreePM(0); michael.addThreePA(0); michael.addFTM(0); michael.addFTA(0); michael.addOReb(0); michael.addDReb(0); michael.addAssists(0); michael.addSteals(0); michael.addBlocks(1); michael.addTurnovers(1); michael.addFouls(2);
+        jalen.addPoints(4); jalen.addFGM(0); jalen.addFGA(3); jalen.addThreePM(0); jalen.addThreePA(3); jalen.addFTM(0); jalen.addFTA(0); jalen.addOReb(0); jalen.addDReb(2); jalen.addAssists(2); jalen.addSteals(3); jalen.addBlocks(2); jalen.addTurnovers(0); jalen.addFouls(3);
+        pranav.addPoints(2); pranav.addFGM(1); pranav.addFGA(2); pranav.addThreePM(0); pranav.addThreePA(0); pranav.addFTM(0); pranav.addFTA(0); pranav.addOReb(0); pranav.addDReb(0); pranav.addAssists(0); pranav.addSteals(0); pranav.addBlocks(0); pranav.addTurnovers(0); pranav.addFouls(0);
+        will.addPoints(9); will.addFGM(3); will.addFGA(7); will.addThreePM(0); will.addThreePA(0); will.addFTM(3); will.addFTA(4); will.addOReb(3); will.addDReb(7); will.addAssists(4); will.addSteals(3); will.addBlocks(2); will.addTurnovers(0); will.addFouls(1);
+        aadi.addPoints(13); aadi.addFGM(6); aadi.addFGA(8); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(5); aadi.addOReb(1); aadi.addDReb(5); aadi.addAssists(4); aadi.addSteals(9); aadi.addBlocks(2); aadi.addTurnovers(1); aadi.addFouls(0);
+        siddh.addPoints(2); siddh.addFGM(1); siddh.addFGA(1); siddh.addThreePM(0); siddh.addThreePA(0); siddh.addFTM(0); siddh.addFTA(0); siddh.addOReb(1); siddh.addDReb(3); siddh.addAssists(4); siddh.addSteals(1); siddh.addBlocks(0); siddh.addTurnovers(0); siddh.addFouls(0);
+        brandon.addPoints(12); brandon.addFGM(5); brandon.addFGA(12); brandon.addThreePM(1); brandon.addThreePA(2); brandon.addFTM(1); brandon.addFTA(1); brandon.addOReb(3); brandon.addDReb(1); brandon.addAssists(3); brandon.addSteals(1); brandon.addBlocks(6); brandon.addTurnovers(3); brandon.addFouls(2);
+
+        msj.addMatch(irvington);
+
+        // GAME 10: vs American - WIN 57-52
+        BasketballMatch american = new BasketballMatch("American", "TBD", 57, 52);
+
+        nikhil.addPoints(0); nikhil.addFGM(0); nikhil.addFGA(2); nikhil.addOReb(0); nikhil.addDReb(3); nikhil.addAssists(3); nikhil.addSteals(2); nikhil.addBlocks(2); nikhil.addTurnovers(1); nikhil.addFouls(0);
+        zerek.addPoints(6); zerek.addFGM(2); zerek.addFGA(8); zerek.addThreePM(1); zerek.addThreePA(4); zerek.addFTM(1); zerek.addFTA(2); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(2); zerek.addSteals(3); zerek.addBlocks(4); zerek.addTurnovers(0); zerek.addFouls(3);
+        leland.addPoints(0); leland.addFGM(0); leland.addFGA(1); leland.addOReb(0); leland.addDReb(3); leland.addAssists(3); leland.addSteals(1); leland.addBlocks(0); leland.addTurnovers(1); leland.addFouls(0);
+        jalen.addPoints(6); jalen.addFGM(2); jalen.addFGA(5); jalen.addThreePM(0); jalen.addThreePA(2); jalen.addFTM(2); jalen.addFTA(4); jalen.addOReb(0); jalen.addDReb(2); jalen.addAssists(2); jalen.addSteals(1); jalen.addBlocks(0); jalen.addTurnovers(2); jalen.addFouls(3);
+        will.addPoints(13); will.addFGM(5); will.addFGA(12); will.addThreePM(1); will.addThreePA(3); will.addFTM(2); will.addFTA(2); will.addOReb(1); will.addDReb(4); will.addAssists(5); will.addSteals(4); will.addBlocks(0); will.addTurnovers(0); will.addFouls(2);
+        aadi.addPoints(8); aadi.addFGM(4); aadi.addFGA(8); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(3); aadi.addAssists(3); aadi.addSteals(6); aadi.addBlocks(2); aadi.addTurnovers(0); aadi.addFouls(1);
+        brandon.addPoints(24); brandon.addFGM(9); brandon.addFGA(9); brandon.addThreePM(1); brandon.addThreePA(1); brandon.addFTM(5); brandon.addFTA(7); brandon.addOReb(0); brandon.addDReb(5); brandon.addAssists(5); brandon.addSteals(4); brandon.addBlocks(2); brandon.addTurnovers(7); brandon.addFouls(1);
+
+        msj.addMatch(american);
+
+        // GAME 11: vs Moreau Catholic - LOSS 61-77
+       
+        BasketballMatch moreau = new BasketballMatch("Moreau Catholic", "TBD", 61, 77,
+                new int[]{15, 16, 17, 13}, new int[]{24, 21, 17, 15});
+
+        nikhil.addPoints(3); nikhil.addFGM(1); nikhil.addFGA(4); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(0); nikhil.addFTA(0); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(5); nikhil.addBlocks(0); nikhil.addTurnovers(3); nikhil.addFouls(0);
+        zerek.addPoints(5); zerek.addFGM(2); zerek.addFGA(5); zerek.addThreePM(1); zerek.addThreePA(3); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(0); zerek.addBlocks(6); zerek.addTurnovers(1); zerek.addFouls(1);
+        jalen.addPoints(9); jalen.addFGM(2); jalen.addFGA(7); jalen.addThreePM(2); jalen.addThreePA(9); jalen.addFTM(3); jalen.addFTA(7); jalen.addOReb(0); jalen.addDReb(0); jalen.addAssists(4); jalen.addSteals(5); jalen.addBlocks(2); jalen.addTurnovers(2); jalen.addFouls(0);
+        will.addPoints(9); will.addFGM(0); will.addFGA(0); will.addThreePM(0); will.addThreePA(0); will.addFTM(9); will.addFTA(12); will.addOReb(2); will.addDReb(1); will.addAssists(3); will.addSteals(5); will.addBlocks(1); will.addTurnovers(0); will.addFouls(2);
+        aadi.addPoints(1); aadi.addFGM(0); aadi.addFGA(1); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(2); aadi.addOReb(0); aadi.addDReb(0); aadi.addAssists(0); aadi.addSteals(1); aadi.addBlocks(1); aadi.addTurnovers(1); aadi.addFouls(0);
+        brandon.addPoints(14); brandon.addFGM(5); brandon.addFGA(10); brandon.addThreePM(0); brandon.addThreePA(2); brandon.addFTM(4); brandon.addFTA(4); brandon.addOReb(1); brandon.addDReb(1); brandon.addAssists(0); brandon.addSteals(1); brandon.addBlocks(4); brandon.addTurnovers(2); brandon.addFouls(3);
+
+        msj.addMatch(moreau);
+
+        // GAME 12: vs Washington - WIN 66-44
+        BasketballMatch washington = new BasketballMatch("Washington", "TBD", 66, 44);
+
+        nikhil.addPoints(8); nikhil.addFGM(2); nikhil.addFGA(5); nikhil.addThreePM(1); nikhil.addThreePA(4); nikhil.addFTM(2); nikhil.addFTA(4); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(3); nikhil.addBlocks(0); nikhil.addTurnovers(3); nikhil.addFouls(4);
+        leland.addPoints(4); leland.addFGM(1); leland.addFGA(2); leland.addThreePM(0); leland.addThreePA(2); leland.addFTM(2); leland.addFTA(4); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(0); leland.addBlocks(4); leland.addTurnovers(1); leland.addFouls(2);
+        jadon.addPoints(0); jadon.addFGM(0); jadon.addFGA(1); jadon.addOReb(0); jadon.addDReb(1); jadon.addAssists(1); jadon.addSteals(1); jadon.addBlocks(0); jadon.addTurnovers(0); jadon.addFouls(0);
+        jalen.addPoints(8); jalen.addFGM(3); jalen.addFGA(7); jalen.addThreePM(2); jalen.addThreePA(5); jalen.addFTM(0); jalen.addFTA(0); jalen.addOReb(0); jalen.addDReb(3); jalen.addAssists(3); jalen.addSteals(6); jalen.addBlocks(2); jalen.addTurnovers(0); jalen.addFouls(1);
+        will.addPoints(20); will.addFGM(7); will.addFGA(13); will.addThreePM(2); will.addThreePA(2); will.addFTM(4); will.addFTA(6); will.addOReb(0); will.addDReb(4); will.addAssists(1); will.addSteals(5); will.addBlocks(1); will.addTurnovers(1); will.addFouls(1);
+        aadi.addPoints(2); aadi.addFGM(1); aadi.addFGA(3); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(6); aadi.addAssists(6); aadi.addSteals(1); aadi.addBlocks(1); aadi.addTurnovers(1); aadi.addFouls(0);
+        brandon.addPoints(24); brandon.addFGM(8); brandon.addFGA(13); brandon.addThreePM(2); brandon.addThreePA(4); brandon.addFTM(6); brandon.addFTA(7); brandon.addOReb(2); brandon.addDReb(1); brandon.addAssists(1); brandon.addSteals(3); brandon.addBlocks(3); brandon.addTurnovers(4); brandon.addFouls(1);
+
+        msj.addMatch(washington);
+
+        // GAME 13: vs Novato - WIN 70-61
+        BasketballMatch novato = new BasketballMatch("Novato", "TBD", 70, 61);
+
+        nikhil.addPoints(10); nikhil.addFGM(4); nikhil.addFGA(6); nikhil.addThreePM(0); nikhil.addThreePA(1); nikhil.addFTM(2); nikhil.addFTA(4); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(2); nikhil.addBlocks(1); nikhil.addTurnovers(0); nikhil.addFouls(2);
+        leland.addPoints(3); leland.addFGM(1); leland.addFGA(4); leland.addThreePM(1); leland.addThreePA(2); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(2); leland.addBlocks(2); leland.addTurnovers(0); leland.addFouls(2);
+        jadon.addPoints(2); jadon.addFGM(1); jadon.addFGA(3); jadon.addThreePM(0); jadon.addThreePA(2); jadon.addFTM(0); jadon.addFTA(0); jadon.addOReb(0); jadon.addDReb(1); jadon.addAssists(2); jadon.addSteals(1); jadon.addBlocks(1); jadon.addTurnovers(1); jadon.addFouls(2);
+        jalen.addPoints(19); jalen.addFGM(6); jalen.addFGA(19); jalen.addThreePM(4); jalen.addThreePA(11); jalen.addFTM(3); jalen.addFTA(6); jalen.addOReb(0); jalen.addDReb(2); jalen.addAssists(5); jalen.addSteals(7); jalen.addBlocks(2); jalen.addTurnovers(1); jalen.addFouls(2);
+        sai.addPoints(0); sai.addFGM(0); sai.addFGA(2); sai.addOReb(0); sai.addDReb(1); sai.addAssists(0); sai.addSteals(1); sai.addBlocks(1); sai.addTurnovers(0); sai.addFouls(0);
+        will.addPoints(13); will.addFGM(5); will.addFGA(9); will.addThreePM(0); will.addThreePA(0); will.addFTM(3); will.addFTA(4); will.addOReb(0); will.addDReb(5); will.addAssists(9); will.addSteals(5); will.addBlocks(6); will.addTurnovers(4); will.addFouls(4);
+        aadi.addPoints(9); aadi.addFGM(4); aadi.addFGA(7); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(1); aadi.addOReb(0); aadi.addDReb(3); aadi.addAssists(3); aadi.addSteals(2); aadi.addBlocks(2); aadi.addTurnovers(0); aadi.addFouls(1);
+        brandon.addPoints(7); brandon.addFGM(1); brandon.addFGA(1); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(5); brandon.addFTA(7); brandon.addOReb(0); brandon.addDReb(4); brandon.addAssists(1); brandon.addSteals(1); brandon.addBlocks(3); brandon.addTurnovers(2); brandon.addFouls(1);
+
+        msj.addMatch(novato);
+
+        // GAME 14: vs Livermore - LOSS 37-49
+        BasketballMatch livermore1 = new BasketballMatch("Livermore", "TBD", 37, 49);
+
+        jalen.addPoints(6); jalen.addFGM(3); jalen.addFGA(11); jalen.addThreePM(0); jalen.addThreePA(4); jalen.addFTM(0); jalen.addFTA(0); jalen.addOReb(0); jalen.addDReb(6); jalen.addAssists(6); jalen.addSteals(2); jalen.addBlocks(0); jalen.addTurnovers(6); jalen.addFouls(1);
+        will.addPoints(14); will.addFGM(6); will.addFGA(10); will.addThreePM(0); will.addThreePA(1); will.addFTM(2); will.addFTA(2); will.addOReb(0); will.addDReb(2); will.addAssists(1); will.addSteals(3); will.addBlocks(1); will.addTurnovers(0); will.addFouls(1);
+        aadi.addPoints(3); aadi.addFGM(1); aadi.addFGA(3); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(3); aadi.addOReb(0); aadi.addDReb(2); aadi.addAssists(3); aadi.addSteals(5); aadi.addBlocks(0); aadi.addTurnovers(1); aadi.addFouls(1);
+        brandon.addPoints(8); brandon.addFGM(2); brandon.addFGA(3); brandon.addThreePM(1); brandon.addThreePA(1); brandon.addFTM(3); brandon.addFTA(4); brandon.addOReb(0); brandon.addDReb(7); brandon.addAssists(9); brandon.addSteals(1); brandon.addBlocks(0); brandon.addTurnovers(3); brandon.addFouls(2);
+        leland.addPoints(3); leland.addFGM(1); leland.addFGA(4); leland.addThreePM(1); leland.addThreePA(2); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(0); leland.addAssists(0); leland.addSteals(1); leland.addBlocks(1); leland.addTurnovers(0); leland.addFouls(0);
+        michael.addPoints(2); michael.addFGM(1); michael.addFGA(1); michael.addThreePM(0); michael.addThreePA(0); michael.addFTM(0); michael.addFTA(0); michael.addOReb(0); michael.addDReb(0); michael.addAssists(0); michael.addSteals(2); michael.addBlocks(0); michael.addTurnovers(1); michael.addFouls(0);
+
+        msj.addMatch(livermore1);
+
+        // GAME 15: vs Northgate - LOSS 58-70
+        
+        BasketballMatch northgate = new BasketballMatch("Northgate", "TBD", 58, 70,
+                new int[]{14, 9, 15, 20}, new int[]{25, 10, 17, 18});
+
+        jalen.addPoints(15); jalen.addFGM(5); jalen.addFGA(16); jalen.addThreePM(2); jalen.addThreePA(7); jalen.addFTM(1); jalen.addFTA(3); jalen.addOReb(1); jalen.addDReb(1); jalen.addAssists(1); jalen.addSteals(3); jalen.addBlocks(5); jalen.addTurnovers(1); jalen.addFouls(9);
+        pranav.addPoints(4); pranav.addFGM(2); pranav.addFGA(3); pranav.addThreePM(0); pranav.addThreePA(0); pranav.addFTM(0); pranav.addFTA(0); pranav.addOReb(0); pranav.addDReb(1); pranav.addAssists(1); pranav.addSteals(0); pranav.addBlocks(0); pranav.addTurnovers(0); pranav.addFouls(2);
+        will.addPoints(11); will.addFGM(5); will.addFGA(10); will.addThreePM(1); will.addThreePA(3); will.addFTM(0); will.addFTA(2); will.addOReb(0); will.addDReb(2); will.addAssists(1); will.addSteals(3); will.addBlocks(1); will.addTurnovers(0); will.addFouls(1);
+        aadi.addPoints(8); aadi.addFGM(4); aadi.addFGA(6); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(2); aadi.addAssists(3); aadi.addSteals(5); aadi.addBlocks(3); aadi.addTurnovers(0); aadi.addFouls(1);
+        brandon.addPoints(14); brandon.addFGM(6); brandon.addFGA(14); brandon.addThreePM(1); brandon.addThreePA(1); brandon.addFTM(1); brandon.addFTA(3); brandon.addOReb(0); brandon.addDReb(5); brandon.addAssists(2); brandon.addSteals(7); brandon.addBlocks(3); brandon.addTurnovers(3); brandon.addFouls(3);
+        leland.addPoints(3); leland.addFGM(1); leland.addFGA(1); leland.addThreePM(1); leland.addThreePA(1); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(0); leland.addBlocks(0); leland.addTurnovers(1); leland.addFouls(0);
+        jadon.addPoints(3); jadon.addFGM(1); jadon.addFGA(2); jadon.addThreePM(1); jadon.addThreePA(2); jadon.addFTM(0); jadon.addFTA(0); jadon.addOReb(0); jadon.addDReb(2); jadon.addAssists(2); jadon.addSteals(0); jadon.addBlocks(0); jadon.addTurnovers(0); jadon.addFouls(0);
+
+        msj.addMatch(northgate);
+
+        // GAME 16: vs Mt. Eden - LOSS 52-60
+        BasketballMatch mtEden = new BasketballMatch("Mt. Eden", "TBD", 52, 60);
+
+        nikhil.addPoints(4); nikhil.addFGM(2); nikhil.addFGA(5); nikhil.addThreePM(0); nikhil.addThreePA(3); nikhil.addFTM(0); nikhil.addFTA(0); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(2); nikhil.addSteals(0); nikhil.addBlocks(0); nikhil.addTurnovers(7); nikhil.addFouls(4);
+        michael.addPoints(3); michael.addFGM(1); michael.addFGA(2); michael.addThreePM(1); michael.addThreePA(2); michael.addFTM(0); michael.addFTA(0); michael.addOReb(0); michael.addDReb(0); michael.addAssists(0); michael.addSteals(1); michael.addBlocks(0); michael.addTurnovers(3); michael.addFouls(1);
+        leland.addPoints(1); leland.addFGM(0); leland.addFGA(1); leland.addThreePM(0); leland.addThreePA(0); leland.addFTM(1); leland.addFTA(2); leland.addOReb(0); leland.addDReb(2); leland.addAssists(2); leland.addSteals(1); leland.addBlocks(1); leland.addTurnovers(4); leland.addFouls(2);
+        jalen.addPoints(8); jalen.addFGM(3); jalen.addFGA(9); jalen.addThreePM(2); jalen.addThreePA(5); jalen.addFTM(0); jalen.addFTA(0); jalen.addOReb(0); jalen.addDReb(2); jalen.addAssists(2); jalen.addSteals(4); jalen.addBlocks(0); jalen.addTurnovers(6); jalen.addFouls(1);
+        will.addPoints(19); will.addFGM(7); will.addFGA(12); will.addThreePM(2); will.addThreePA(4); will.addFTM(3); will.addFTA(5); will.addOReb(1); will.addDReb(4); will.addAssists(5); will.addSteals(2); will.addBlocks(0); will.addTurnovers(3); will.addFouls(4);
+        brandon.addPoints(17); brandon.addFGM(7); brandon.addFGA(9); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(3); brandon.addFTA(5); brandon.addOReb(0); brandon.addDReb(2); brandon.addAssists(8); brandon.addSteals(1); brandon.addBlocks(0); brandon.addTurnovers(2); brandon.addFouls(2);
+
+        msj.addMatch(mtEden);
+
+        // GAME 17: vs Arroyo - WIN 59-53
+        BasketballMatch arroyo = new BasketballMatch("Arroyo", "TBD", 59, 53);
+
+        nikhil.addPoints(5); nikhil.addFGM(2); nikhil.addFGA(4); nikhil.addThreePM(0); nikhil.addThreePA(2); nikhil.addFTM(1); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(4); nikhil.addAssists(4); nikhil.addSteals(5); nikhil.addBlocks(2); nikhil.addTurnovers(0); nikhil.addFouls(4);
+        leland.addPoints(4); leland.addFGM(1); leland.addFGA(3); leland.addThreePM(1); leland.addThreePA(3); leland.addFTM(1); leland.addFTA(2); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(2); leland.addBlocks(0); leland.addTurnovers(0); leland.addFouls(0);
+        pranav.addPoints(2); pranav.addFGM(1); pranav.addFGA(0); pranav.addThreePM(0); pranav.addThreePA(1); pranav.addFTM(0); pranav.addFTA(0); pranav.addFTM(2); pranav.addFTA(2); pranav.addOReb(0); pranav.addDReb(0); pranav.addAssists(0); pranav.addSteals(1); pranav.addBlocks(0); pranav.addTurnovers(1); pranav.addFouls(0);
+        sai.addPoints(2); sai.addFGM(1); sai.addFGA(1); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(0); sai.addFTA(0); sai.addOReb(0); sai.addDReb(2); sai.addAssists(2); sai.addSteals(1); sai.addBlocks(0); sai.addTurnovers(1); sai.addFouls(0);
+        will.addPoints(19); will.addFGM(9); will.addFGA(16); will.addThreePM(0); will.addThreePA(0); will.addFTM(1); will.addFTA(2); will.addOReb(0); will.addDReb(1); will.addAssists(1); will.addSteals(3); will.addBlocks(2); will.addTurnovers(2); will.addFouls(0);
+        aadi.addPoints(8); aadi.addFGM(3); aadi.addFGA(5); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(2); aadi.addFTA(4); aadi.addOReb(0); aadi.addDReb(3); aadi.addAssists(3); aadi.addSteals(1); aadi.addBlocks(0); aadi.addTurnovers(0); aadi.addFouls(4);
+        brandon.addPoints(19); brandon.addFGM(7); brandon.addFGA(13); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(5); brandon.addFTA(6); brandon.addOReb(4); brandon.addDReb(9); brandon.addAssists(1); brandon.addSteals(3); brandon.addBlocks(5); brandon.addTurnovers(1); brandon.addFouls(3);
+
+        msj.addMatch(arroyo);
+
+        // ---------------------------------------------------------------
+        // GAME 18: vs Livermore (2) - LOSS 42-69
+        // ---------------------------------------------------------------
+        BasketballMatch livermore2 = new BasketballMatch("Livermore", "TBD", 42, 69);
+
+        nikhil.addPoints(11); nikhil.addFGM(3); nikhil.addFGA(6); nikhil.addThreePM(1); nikhil.addThreePA(3); nikhil.addFTM(4); nikhil.addFTA(5); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(3); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(6); nikhil.addFouls(1);
+        michael.addPoints(3); michael.addFGM(1); michael.addFGA(1); michael.addThreePM(1); michael.addThreePA(1); michael.addFTM(0); michael.addFTA(0); michael.addOReb(0); michael.addDReb(0); michael.addAssists(0); michael.addSteals(1); michael.addBlocks(0); michael.addTurnovers(1); michael.addFouls(0);
+        leland.addPoints(3); leland.addFGM(1); leland.addFGA(3); leland.addThreePM(1); leland.addThreePA(3); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(1); leland.addAssists(0); leland.addSteals(6); leland.addBlocks(0); leland.addTurnovers(0); leland.addFouls(0);
+        jadon.addPoints(6); jadon.addFGM(2); jadon.addFGA(4); jadon.addThreePM(0); jadon.addThreePA(2); jadon.addFTM(2); jadon.addFTA(4); jadon.addOReb(0); jadon.addDReb(1); jadon.addAssists(1); jadon.addSteals(0); jadon.addBlocks(9); jadon.addTurnovers(1); jadon.addFouls(2);
+        will.addPoints(9); will.addFGM(4); will.addFGA(7); will.addThreePM(0); will.addThreePA(1); will.addFTM(1); will.addFTA(2); will.addOReb(0); will.addDReb(1); will.addAssists(1); will.addSteals(2); will.addBlocks(2); will.addTurnovers(1); will.addFouls(1);
+        aadi.addPoints(4); aadi.addFGM(2); aadi.addFGA(3); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(2); aadi.addAssists(2); aadi.addSteals(2); aadi.addBlocks(0); aadi.addTurnovers(0); aadi.addFouls(0);
+        brandon.addPoints(4); brandon.addFGM(2); brandon.addFGA(7); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(0); brandon.addFTA(0); brandon.addOReb(0); brandon.addDReb(3); brandon.addAssists(7); brandon.addSteals(1); brandon.addBlocks(0); brandon.addTurnovers(3); brandon.addFouls(2);
+
+        msj.addMatch(livermore2);
+
+        // ---------------------------------------------------------------
+        // GAME 19: vs Kennedy - LOSS 48-55
+        // ---------------------------------------------------------------
+        BasketballMatch kennedy = new BasketballMatch("Kennedy", "TBD", 48, 55);
+
+        leland.addPoints(9); leland.addFGM(4); leland.addFGA(11); leland.addThreePM(1); leland.addThreePA(6); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(0); leland.addAssists(2); leland.addSteals(1); leland.addBlocks(0); leland.addTurnovers(3); leland.addFouls(2);
+        jadon.addPoints(6); jadon.addFGM(2); jadon.addFGA(4); jadon.addThreePM(1); jadon.addThreePA(2); jadon.addFTM(1); jadon.addFTA(2); jadon.addOReb(0); jadon.addDReb(3); jadon.addAssists(3); jadon.addSteals(1); jadon.addBlocks(0); jadon.addTurnovers(3); jadon.addFouls(2);
+        will.addPoints(6); will.addFGM(1); will.addFGA(0); will.addThreePM(0); will.addThreePA(1); will.addFTM(4); will.addFTA(4); will.addOReb(2); will.addDReb(4); will.addAssists(6); will.addSteals(4); will.addBlocks(0); will.addTurnovers(2); will.addFouls(7);
+        aadi.addPoints(2); aadi.addFGM(0); aadi.addFGA(2); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(2); aadi.addFTA(2); aadi.addOReb(0); aadi.addDReb(2); aadi.addAssists(4); aadi.addSteals(6); aadi.addBlocks(1); aadi.addTurnovers(1); aadi.addFouls(1);
+        brandon.addPoints(25); brandon.addFGM(10); brandon.addFGA(17); brandon.addThreePM(2); brandon.addThreePA(2); brandon.addFTM(3); brandon.addFTA(3); brandon.addOReb(1); brandon.addDReb(0); brandon.addAssists(5); brandon.addSteals(9); brandon.addBlocks(4); brandon.addTurnovers(0); brandon.addFouls(6); brandon.addFouls(5);
+
+        msj.addMatch(kennedy);
+
+        // ---------------------------------------------------------------
+        // GAME 20: vs Concord - WIN 65-39
+        // ---------------------------------------------------------------
+        BasketballMatch concord = new BasketballMatch("Concord", "TBD", 65, 39);
+
+        nikhil.addPoints(5); nikhil.addFGM(1); nikhil.addFGA(4); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(2); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(1); nikhil.addBlocks(4); nikhil.addTurnovers(4); nikhil.addFouls(4);
+        leland.addPoints(0); leland.addFGM(0); leland.addFGA(2); leland.addOReb(0); leland.addDReb(0); leland.addAssists(0); leland.addSteals(1); leland.addBlocks(2); leland.addTurnovers(3); leland.addFouls(0);
+        jadon.addPoints(8); jadon.addFGM(4); jadon.addFGA(6); jadon.addThreePM(0); jadon.addThreePA(2); jadon.addFTM(0); jadon.addFTA(0); jadon.addOReb(1); jadon.addDReb(0); jadon.addAssists(1); jadon.addSteals(3); jadon.addBlocks(2); jadon.addTurnovers(2); jadon.addFouls(1);
+        pranav.addPoints(4); pranav.addFGM(1); pranav.addFGA(3); pranav.addThreePM(0); pranav.addThreePA(0); pranav.addFTM(2); pranav.addFTA(2); pranav.addOReb(0); pranav.addDReb(2); pranav.addAssists(2); pranav.addSteals(1); pranav.addBlocks(1); pranav.addTurnovers(4); pranav.addFouls(0);
+        sai.addPoints(2); sai.addFGM(1); sai.addFGA(6); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(0); sai.addFTA(1); sai.addOReb(0); sai.addDReb(1); sai.addAssists(1); sai.addSteals(0); sai.addBlocks(1); sai.addTurnovers(0); sai.addFouls(1);
+        will.addPoints(20); will.addFGM(9); will.addFGA(14); will.addThreePM(0); will.addThreePA(1); will.addFTM(2); will.addFTA(2); will.addOReb(0); will.addDReb(3); will.addAssists(2); will.addSteals(5); will.addBlocks(4); will.addTurnovers(1); will.addFouls(0);
+        aadi.addPoints(2); aadi.addFGM(1); aadi.addFGA(4); aadi.addThreePM(0); aadi.addThreePA(2); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(1); aadi.addDReb(4); aadi.addAssists(5); aadi.addSteals(3); aadi.addBlocks(0); aadi.addTurnovers(3); aadi.addFouls(0);
+        siddh.addPoints(4); siddh.addFGM(2); siddh.addFGA(2); siddh.addThreePM(0); siddh.addThreePA(0); siddh.addFTM(0); siddh.addFTA(0); siddh.addOReb(0); siddh.addDReb(2); siddh.addAssists(2); siddh.addSteals(1); siddh.addBlocks(0); siddh.addTurnovers(2); siddh.addFouls(1);
+        brandon.addPoints(20); brandon.addFGM(9); brandon.addFGA(15); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(2); brandon.addFTA(5); brandon.addOReb(1); brandon.addDReb(8); brandon.addAssists(6); brandon.addSteals(1); brandon.addBlocks(4); brandon.addTurnovers(5); brandon.addFouls(1);
+
+        msj.addMatch(concord);
+
+        // ---------------------------------------------------------------
+        // GAME 21: vs Newark Memorial - LOSS 39-42
+        // ---------------------------------------------------------------
+        BasketballMatch newark2 = new BasketballMatch("Newark Memorial", "TBD", 39, 42);
+
+        nikhil.addPoints(5); nikhil.addFGM(2); nikhil.addFGA(9); nikhil.addThreePM(1); nikhil.addThreePA(8); nikhil.addFTM(0); nikhil.addFTA(1); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(0); nikhil.addSteals(1); nikhil.addBlocks(1); nikhil.addTurnovers(3); nikhil.addFouls(3);
+        leland.addPoints(0); leland.addFGM(0); leland.addFGA(3); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(2); leland.addTurnovers(0); leland.addFouls(0);
+        jadon.addPoints(2); jadon.addFGM(1); jadon.addFGA(1); jadon.addThreePM(0); jadon.addThreePA(0); jadon.addFTM(0); jadon.addFTA(0); jadon.addOReb(0); jadon.addDReb(2); jadon.addAssists(2); jadon.addSteals(2); jadon.addBlocks(1); jadon.addTurnovers(2); jadon.addFouls(1);
+        pranav.addPoints(5); pranav.addFGM(1); pranav.addFGA(1); pranav.addThreePM(1); pranav.addThreePA(1); pranav.addFTM(2); pranav.addFTA(4); pranav.addOReb(0); pranav.addDReb(1); pranav.addAssists(1); pranav.addSteals(1); pranav.addBlocks(0); pranav.addTurnovers(1); pranav.addFouls(0);
+        sai.addPoints(2); sai.addFGM(1); sai.addFGA(4); sai.addThreePM(0); sai.addThreePA(2); sai.addFTM(0); sai.addFTA(0); sai.addOReb(0); sai.addDReb(3); sai.addAssists(3); sai.addSteals(2); sai.addBlocks(0); sai.addTurnovers(1); sai.addFouls(3);
+        will.addPoints(7); will.addFGM(3); will.addFGA(6); will.addThreePM(0); will.addThreePA(2); will.addFTM(1); will.addFTA(2); will.addOReb(0); will.addDReb(2); will.addAssists(2); will.addSteals(1); will.addBlocks(2); will.addTurnovers(3); will.addFouls(3);
+        aadi.addPoints(3); aadi.addFGM(1); aadi.addFGA(3); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(2); aadi.addOReb(0); aadi.addDReb(1); aadi.addAssists(1); aadi.addSteals(0); aadi.addBlocks(0); aadi.addTurnovers(0); aadi.addFouls(1);
+        brandon.addPoints(15); brandon.addFGM(4); brandon.addFGA(13); brandon.addThreePM(0); brandon.addThreePA(1); brandon.addFTM(7); brandon.addFTA(9); brandon.addOReb(0); brandon.addDReb(5); brandon.addAssists(6); brandon.addSteals(1); brandon.addBlocks(0); brandon.addTurnovers(1); brandon.addFouls(3);
+
+        msj.addMatch(newark2);
+
+        // ---------------------------------------------------------------
+        // GAME 22: vs San Mateo - WIN 62-52
+        // ---------------------------------------------------------------
+        BasketballMatch sanMateo = new BasketballMatch("San Mateo", "TBD", 62, 52);
+
+        nikhil.addPoints(6); nikhil.addFGM(1); nikhil.addFGA(4); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(3); nikhil.addFTA(6); nikhil.addOReb(0); nikhil.addDReb(1); nikhil.addAssists(2); nikhil.addSteals(3); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(5);
+        leland.addPoints(6); leland.addFGM(2); leland.addFGA(5); leland.addThreePM(1); leland.addThreePA(3); leland.addFTM(1); leland.addFTA(2); leland.addOReb(0); leland.addDReb(2); leland.addAssists(2); leland.addSteals(4); leland.addBlocks(0); leland.addTurnovers(3); leland.addFouls(0);
+        jadon.addPoints(3); jadon.addFGM(1); jadon.addFGA(2); jadon.addThreePM(0); jadon.addThreePA(2); jadon.addFTM(1); jadon.addFTA(2); jadon.addOReb(0); jadon.addDReb(1); jadon.addAssists(1); jadon.addSteals(2); jadon.addBlocks(0); jadon.addTurnovers(0); jadon.addFouls(1);
+        pranav.addPoints(2); pranav.addFGM(1); pranav.addFGA(0); pranav.addThreePM(0); pranav.addThreePA(1); pranav.addFTM(0); pranav.addFTM(2); pranav.addFTA(2); pranav.addOReb(0); pranav.addDReb(0); pranav.addAssists(0); pranav.addSteals(0); pranav.addBlocks(0); pranav.addTurnovers(0); pranav.addFouls(0);
+        sai.addPoints(8); sai.addFGM(3); sai.addFGA(4); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(2); sai.addFTA(4); sai.addOReb(0); sai.addDReb(1); sai.addAssists(2); sai.addSteals(3); sai.addBlocks(1); sai.addTurnovers(0); sai.addFouls(2);
+        will.addPoints(17); will.addFGM(6); will.addFGA(10); will.addThreePM(1); will.addThreePA(2); will.addFTM(4); will.addFTA(4); will.addOReb(1); will.addDReb(2); will.addAssists(3); will.addSteals(5); will.addBlocks(3); will.addTurnovers(2); will.addFouls(1);
+        aadi.addPoints(2); aadi.addFGM(1); aadi.addFGA(3); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(6); aadi.addAssists(6); aadi.addSteals(1); aadi.addBlocks(1); aadi.addTurnovers(3); aadi.addFouls(4);
+        brandon.addPoints(18); brandon.addFGM(6); brandon.addFGA(12); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(6); brandon.addFTA(6); brandon.addOReb(0); brandon.addDReb(5); brandon.addAssists(9); brandon.addSteals(1); brandon.addBlocks(4); brandon.addTurnovers(3); brandon.addFouls(2);
+
+        msj.addMatch(sanMateo);
+
+        // ---------------------------------------------------------------
+        // GAME 23: vs James Logan - WIN 51-55 (2OT)
+        // ---------------------------------------------------------------
+        BasketballMatch jamesLogan = new BasketballMatch("James Logan", "TBD", 51, 55,
+                new int[]{0, 0, 0, 0, 5, 5}, new int[]{0, 0, 0, 0, 5, 1});
+
+        nikhil.addPoints(7); nikhil.addFGM(2); nikhil.addFGA(6); nikhil.addThreePM(1); nikhil.addThreePA(3); nikhil.addFTM(2); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(1); nikhil.addAssists(1); nikhil.addSteals(2); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(3);
+        zerek.addPoints(7); zerek.addFGM(3); zerek.addFGA(7); zerek.addThreePM(0); zerek.addThreePA(1); zerek.addFTM(1); zerek.addFTA(2); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(1); zerek.addSteals(1); zerek.addBlocks(2); zerek.addTurnovers(3); zerek.addFouls(0);
+        sai.addPoints(4); sai.addFGM(2); sai.addFGA(3); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(0); sai.addFTA(0); sai.addOReb(0); sai.addDReb(1); sai.addAssists(1); sai.addSteals(0); sai.addBlocks(0); sai.addTurnovers(3); sai.addFouls(0);
+        will.addPoints(12); will.addFGM(5); will.addFGA(10); will.addThreePM(1); will.addThreePA(4); will.addFTM(1); will.addFTA(2); will.addOReb(1); will.addDReb(3); will.addAssists(4); will.addSteals(3); will.addBlocks(1); will.addTurnovers(0); will.addFouls(2);
+        aadi.addPoints(7); aadi.addFGM(3); aadi.addFGA(6); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(4); aadi.addOReb(0); aadi.addDReb(4); aadi.addAssists(4); aadi.addSteals(1); aadi.addBlocks(1); aadi.addTurnovers(1); aadi.addFouls(3);
+        brandon.addPoints(14); brandon.addFGM(4); brandon.addFGA(7); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(6); brandon.addFTA(11); brandon.addOReb(0); brandon.addDReb(5); brandon.addAssists(5); brandon.addSteals(1); brandon.addBlocks(8); brandon.addTurnovers(5); brandon.addFouls(2);
+
+        msj.addMatch(jamesLogan);
+
+        // ---------------------------------------------------------------
+        // GAME 24: vs Watsonville - WIN 55-50
+        // ---------------------------------------------------------------
+        BasketballMatch watsonville = new BasketballMatch("Watsonville", "TBD", 55, 50);
+
+        nikhil.addPoints(4); nikhil.addFGM(1); nikhil.addFGA(2); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(0); nikhil.addFTA(0); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(3); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(0);
+        zerek.addPoints(11); zerek.addFGM(4); zerek.addFGA(5); zerek.addThreePM(1); zerek.addThreePA(1); zerek.addFTM(2); zerek.addFTA(2); zerek.addOReb(0); zerek.addDReb(1); zerek.addAssists(2); zerek.addSteals(3); zerek.addBlocks(0); zerek.addTurnovers(5); zerek.addFouls(1);
+        leland.addPoints(6); leland.addFGM(2); leland.addFGA(5); leland.addThreePM(1); leland.addThreePA(4); leland.addFTM(1); leland.addFTA(2); leland.addOReb(0); leland.addDReb(1); leland.addAssists(1); leland.addSteals(0); leland.addBlocks(0); leland.addTurnovers(0); leland.addFouls(0);
+        sai.addPoints(5); sai.addFGM(2); sai.addFGA(3); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(1); sai.addFTA(2); sai.addOReb(0); sai.addDReb(2); sai.addAssists(2); sai.addSteals(1); sai.addBlocks(0); sai.addTurnovers(1); sai.addFouls(3);
+        will.addPoints(13); will.addFGM(6); will.addFGA(13); will.addThreePM(0); will.addThreePA(0); will.addFTM(1); will.addFTA(2); will.addOReb(0); will.addDReb(4); will.addAssists(1); will.addSteals(5); will.addBlocks(4); will.addTurnovers(2); will.addFouls(0);
+        aadi.addPoints(7); aadi.addFGM(3); aadi.addFGA(9); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(1); aadi.addFTA(2); aadi.addOReb(0); aadi.addDReb(3); aadi.addAssists(7); aadi.addSteals(4); aadi.addBlocks(0); aadi.addTurnovers(0); aadi.addFouls(2);
+        brandon.addPoints(3); brandon.addFGM(0); brandon.addFGA(6); brandon.addThreePM(0); brandon.addThreePA(3); brandon.addFTM(3); brandon.addFTA(4); brandon.addOReb(6); brandon.addDReb(1); brandon.addAssists(2); brandon.addSteals(1); brandon.addBlocks(8); brandon.addTurnovers(7); brandon.addFouls(1);
+
+        msj.addMatch(watsonville);
+
+        // ---------------------------------------------------------------
+        // GAME 25: vs Antioch - WIN 60-38
+        // Q: MSJ 17-20-13-10, Antioch 5-13-10-10
+        // ---------------------------------------------------------------
+        BasketballMatch antioch = new BasketballMatch("Antioch", "TBD", 60, 38,
+                new int[]{17, 20, 13, 10}, new int[]{5, 13, 10, 10});
+
+        zerek.addPoints(6); zerek.addFGM(3); zerek.addFGA(7); zerek.addThreePM(0); zerek.addThreePA(0); zerek.addFTM(0); zerek.addFTA(0); zerek.addOReb(0); zerek.addDReb(3); zerek.addAssists(3); zerek.addSteals(2); zerek.addBlocks(3); zerek.addTurnovers(0); zerek.addFouls(3);
+        leland.addPoints(5); leland.addFGM(2); leland.addFGA(2); leland.addThreePM(1); leland.addThreePA(1); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(2); leland.addAssists(0); leland.addSteals(1); leland.addBlocks(0); leland.addTurnovers(1); leland.addFouls(0);
+        jadon.addPoints(2); jadon.addFGM(1); jadon.addFGA(5); jadon.addThreePM(0); jadon.addThreePA(2); jadon.addFTM(0); jadon.addFTA(0); jadon.addOReb(1); jadon.addDReb(1); jadon.addAssists(2); jadon.addSteals(3); jadon.addBlocks(1); jadon.addTurnovers(0); jadon.addFouls(1);
+        sai.addPoints(2); sai.addFGM(1); sai.addFGA(3); sai.addThreePM(0); sai.addThreePA(0); sai.addFTM(0); sai.addFTA(0); sai.addOReb(1); sai.addDReb(0); sai.addAssists(0); sai.addSteals(0); sai.addBlocks(0); sai.addTurnovers(0); sai.addFouls(0);
+        will.addPoints(16); will.addFGM(7); will.addFGA(16); will.addThreePM(0); will.addThreePA(3); will.addFTM(2); will.addFTA(5); will.addOReb(0); will.addDReb(1); will.addAssists(5); will.addSteals(6); will.addBlocks(5); will.addTurnovers(4); will.addFouls(1);
+        aadi.addPoints(4); aadi.addFGM(2); aadi.addFGA(6); aadi.addThreePM(0); aadi.addThreePA(0); aadi.addFTM(0); aadi.addFTA(0); aadi.addOReb(0); aadi.addDReb(2); aadi.addAssists(2); aadi.addSteals(0); aadi.addBlocks(0); aadi.addTurnovers(3); aadi.addFouls(0);
+        siddh.addPoints(2); siddh.addFGM(1); siddh.addFGA(1); siddh.addThreePM(0); siddh.addThreePA(0); siddh.addFTM(0); siddh.addFTA(0); siddh.addOReb(0); siddh.addDReb(0); siddh.addAssists(0); siddh.addSteals(1); siddh.addBlocks(2); siddh.addTurnovers(1); siddh.addFouls(2);
+        brandon.addPoints(21); brandon.addFGM(9); brandon.addFGA(7); brandon.addThreePM(0); brandon.addThreePA(0); brandon.addFTM(7); brandon.addFTA(8); brandon.addOReb(4); brandon.addDReb(8); brandon.addAssists(1); brandon.addSteals(2); brandon.addBlocks(5); brandon.addTurnovers(5); brandon.addFouls(3);
+
+        msj.addMatch(antioch);
+
+        return msj;
+    }
+}
+
