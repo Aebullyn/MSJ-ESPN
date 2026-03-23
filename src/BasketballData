@@ -261,9 +261,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(arroyo);
 
-        // ---------------------------------------------------------------
         // GAME 18: vs Livermore (2) - LOSS 42-69
-        // ---------------------------------------------------------------
         BasketballMatch livermore2 = new BasketballMatch("Livermore", "TBD", 42, 69);
 
         nikhil.addPoints(11); nikhil.addFGM(3); nikhil.addFGA(6); nikhil.addThreePM(1); nikhil.addThreePA(3); nikhil.addFTM(4); nikhil.addFTA(5); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(3); nikhil.addSteals(1); nikhil.addBlocks(0); nikhil.addTurnovers(6); nikhil.addFouls(1);
@@ -276,9 +274,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(livermore2);
 
-        // ---------------------------------------------------------------
         // GAME 19: vs Kennedy - LOSS 48-55
-        // ---------------------------------------------------------------
         BasketballMatch kennedy = new BasketballMatch("Kennedy", "TBD", 48, 55);
 
         leland.addPoints(9); leland.addFGM(4); leland.addFGA(11); leland.addThreePM(1); leland.addThreePA(6); leland.addFTM(0); leland.addFTA(0); leland.addOReb(0); leland.addDReb(0); leland.addAssists(2); leland.addSteals(1); leland.addBlocks(0); leland.addTurnovers(3); leland.addFouls(2);
@@ -289,9 +285,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(kennedy);
 
-        // ---------------------------------------------------------------
         // GAME 20: vs Concord - WIN 65-39
-        // ---------------------------------------------------------------
         BasketballMatch concord = new BasketballMatch("Concord", "TBD", 65, 39);
 
         nikhil.addPoints(5); nikhil.addFGM(1); nikhil.addFGA(4); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(2); nikhil.addFTA(2); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(1); nikhil.addBlocks(4); nikhil.addTurnovers(4); nikhil.addFouls(4);
@@ -306,9 +300,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(concord);
 
-        // ---------------------------------------------------------------
         // GAME 21: vs Newark Memorial - LOSS 39-42
-        // ---------------------------------------------------------------
         BasketballMatch newark2 = new BasketballMatch("Newark Memorial", "TBD", 39, 42);
 
         nikhil.addPoints(5); nikhil.addFGM(2); nikhil.addFGA(9); nikhil.addThreePM(1); nikhil.addThreePA(8); nikhil.addFTM(0); nikhil.addFTA(1); nikhil.addOReb(0); nikhil.addDReb(0); nikhil.addAssists(0); nikhil.addSteals(1); nikhil.addBlocks(1); nikhil.addTurnovers(3); nikhil.addFouls(3);
@@ -322,9 +314,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(newark2);
 
-        // ---------------------------------------------------------------
         // GAME 22: vs San Mateo - WIN 62-52
-        // ---------------------------------------------------------------
         BasketballMatch sanMateo = new BasketballMatch("San Mateo", "TBD", 62, 52);
 
         nikhil.addPoints(6); nikhil.addFGM(1); nikhil.addFGA(4); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(3); nikhil.addFTA(6); nikhil.addOReb(0); nikhil.addDReb(1); nikhil.addAssists(2); nikhil.addSteals(3); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(5);
@@ -338,9 +328,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(sanMateo);
 
-        // ---------------------------------------------------------------
         // GAME 23: vs James Logan - WIN 51-55 (2OT)
-        // ---------------------------------------------------------------
         BasketballMatch jamesLogan = new BasketballMatch("James Logan", "TBD", 51, 55,
                 new int[]{0, 0, 0, 0, 5, 5}, new int[]{0, 0, 0, 0, 5, 1});
 
@@ -353,9 +341,7 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(jamesLogan);
 
-        // ---------------------------------------------------------------
         // GAME 24: vs Watsonville - WIN 55-50
-        // ---------------------------------------------------------------
         BasketballMatch watsonville = new BasketballMatch("Watsonville", "TBD", 55, 50);
 
         nikhil.addPoints(4); nikhil.addFGM(1); nikhil.addFGA(2); nikhil.addThreePM(1); nikhil.addThreePA(2); nikhil.addFTM(0); nikhil.addFTA(0); nikhil.addOReb(0); nikhil.addDReb(2); nikhil.addAssists(2); nikhil.addSteals(3); nikhil.addBlocks(0); nikhil.addTurnovers(0); nikhil.addFouls(0);
@@ -368,10 +354,8 @@ BasketballMatch weed = new BasketballMatch("Weed", "TBD", 62, 58,
 
         msj.addMatch(watsonville);
 
-        // ---------------------------------------------------------------
         // GAME 25: vs Antioch - WIN 60-38
-        // Q: MSJ 17-20-13-10, Antioch 5-13-10-10
-        // ---------------------------------------------------------------
+        
         BasketballMatch antioch = new BasketballMatch("Antioch", "TBD", 60, 38,
                 new int[]{17, 20, 13, 10}, new int[]{5, 13, 10, 10});
 
