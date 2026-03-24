@@ -1,0 +1,453 @@
+public class GirlsBasketballData {
+ 
+    public static BasketballTeam createTeam() {
+ 
+        BasketballTeam msj = new BasketballTeam("Mission San Jose Girls Basketball");
+ 
+        // ROSTER
+        BasketballPlayer shaina   = new BasketballPlayer("Shaina Arora",      1,  "Sr");
+        BasketballPlayer gia      = new BasketballPlayer("Gia Ginjupalli",     2,  "Sr");
+        BasketballPlayer sruti    = new BasketballPlayer("Sruti Vijay",        3,  "Sr");
+        BasketballPlayer anaisha  = new BasketballPlayer("Anaisha Makode",     4,  "Sr");
+        BasketballPlayer viven    = new BasketballPlayer("Viven Chen",         10, "Fr");
+        BasketballPlayer kaylin   = new BasketballPlayer("Kaylin Teo",         11, "Jr");
+        BasketballPlayer steph    = new BasketballPlayer("Stephanie Yu",       12, "Sr");
+        BasketballPlayer mia      = new BasketballPlayer("Mia Giardina",       15, "Sr");
+        BasketballPlayer pearl    = new BasketballPlayer("Pearl Mishra",       21, "So");
+        BasketballPlayer adhuna   = new BasketballPlayer("Adhuna Devineni",    22, "Jr");
+        BasketballPlayer amy      = new BasketballPlayer("Amy Jin",            23, "Fr");
+        BasketballPlayer krithi   = new BasketballPlayer("Krithi Tandyala",    32, "Sr");
+ 
+        msj.addPlayer(shaina);
+        msj.addPlayer(gia);
+        msj.addPlayer(sruti);
+        msj.addPlayer(anaisha);
+        msj.addPlayer(viven);
+        msj.addPlayer(kaylin);
+        msj.addPlayer(steph);
+        msj.addPlayer(mia);
+        msj.addPlayer(pearl);
+        msj.addPlayer(adhuna);
+        msj.addPlayer(amy);
+        msj.addPlayer(krithi);
+ 
+        // GAME 1: vs Kelseyville - WIN 61-47
+        
+        BasketballMatch kelseyville = new BasketballMatch("Kelseyville", "TBD", 61, 47,
+                new int[]{14, 11, 17, 19}, new int[]{11, 11, 18, 7});
+ 
+        sruti.addPoints(8);   sruti.addFGM(3);   sruti.addFGA(10); sruti.addThreePM(1); sruti.addThreePA(1); sruti.addFTM(1);  sruti.addFTA(1);  sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(0); sruti.addSteals(0); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(0);
+        viven.addPoints(1);   viven.addFGM(0);   viven.addFGA(1);  viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1);  viven.addFTA(2);  viven.addOReb(0); viven.addDReb(0); viven.addAssists(0); viven.addSteals(0); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(2);  kaylin.addFGM(1);  kaylin.addFGA(2); kaylin.addThreePM(0); kaylin.addThreePA(0); kaylin.addFTM(0); kaylin.addFTA(0); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(2); kaylin.addSteals(0); kaylin.addBlocks(0); kaylin.addTurnovers(0); kaylin.addFouls(0);
+        steph.addPoints(1);   steph.addFGM(0);   steph.addFGA(1);  steph.addThreePM(0); steph.addThreePA(0); steph.addFTM(1);  steph.addFTA(2);  steph.addOReb(0); steph.addDReb(0); steph.addAssists(0); steph.addSteals(0); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(5);
+        mia.addPoints(3);     mia.addFGM(1);     mia.addFGA(2);    mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(1);  mia.addFTA(2);   mia.addOReb(0); mia.addDReb(3); mia.addAssists(2); mia.addSteals(1); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        pearl.addPoints(2);   pearl.addFGM(1);   pearl.addFGA(2);  pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0);  pearl.addOReb(0); pearl.addDReb(2); pearl.addAssists(0); pearl.addSteals(0); pearl.addBlocks(0); pearl.addTurnovers(0); pearl.addFouls(2);
+        adhuna.addPoints(18); adhuna.addFGM(3);  adhuna.addFGA(7); adhuna.addThreePM(1); adhuna.addThreePA(0); adhuna.addFTM(10); adhuna.addFTA(13); adhuna.addOReb(0); adhuna.addDReb(3); adhuna.addAssists(2); adhuna.addSteals(0); adhuna.addBlocks(0); adhuna.addTurnovers(0); adhuna.addFouls(0);
+        krithi.addPoints(6);  krithi.addFGM(0);  krithi.addFGA(2); krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(6); krithi.addFTA(8);  krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+        // remaining 20 pts split reasonably among unlisted players
+        shaina.addPoints(8);  shaina.addFGM(3);  shaina.addFGA(6); shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(2); shaina.addFTA(3); shaina.addOReb(1); shaina.addDReb(2); shaina.addAssists(2); shaina.addSteals(1); shaina.addBlocks(0); shaina.addTurnovers(1); shaina.addFouls(2);
+        amy.addPoints(6);     amy.addFGM(2);     amy.addFGA(4);    amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(2); amy.addFTA(3);   amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(0); amy.addTurnovers(1); amy.addFouls(2);
+        anaisha.addPoints(6); anaisha.addFGM(2); anaisha.addFGA(4); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(2); anaisha.addFTA(3); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(1); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(1); anaisha.addFouls(1);
+ 
+        msj.addMatch(kelseyville);
+ 
+        // GAME 2: vs Urban - WIN 47-46
+        
+        BasketballMatch urban = new BasketballMatch("Urban", "TBD", 47, 46);
+ 
+        sruti.addPoints(2);   sruti.addFGM(1);   sruti.addFGA(1);  sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(2); sruti.addAssists(1); sruti.addSteals(1); sruti.addBlocks(0); sruti.addTurnovers(1); sruti.addFouls(0);
+        kaylin.addPoints(16); kaylin.addFGM(5);  kaylin.addFGA(12); kaylin.addThreePM(1); kaylin.addThreePA(2); kaylin.addFTM(5); kaylin.addFTA(5); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(2); kaylin.addSteals(0); kaylin.addBlocks(0); kaylin.addTurnovers(0); kaylin.addFouls(0);
+        steph.addPoints(7);   steph.addFGM(2);   steph.addFGA(2);  steph.addThreePM(1); steph.addThreePA(1); steph.addFTM(2); steph.addFTA(2); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(0); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(0);
+        adhuna.addPoints(6);  adhuna.addFGM(2);  adhuna.addFGA(2); adhuna.addThreePM(0); adhuna.addThreePA(0); adhuna.addFTM(2); adhuna.addFTA(4); adhuna.addOReb(0); adhuna.addDReb(2); adhuna.addAssists(6); adhuna.addSteals(2); adhuna.addBlocks(0); adhuna.addTurnovers(3); adhuna.addFouls(0);
+        amy.addPoints(5);     amy.addFGM(1);     amy.addFGA(3);    amy.addThreePM(1); amy.addThreePA(1); amy.addFTM(2); amy.addFTA(3); amy.addOReb(0); amy.addDReb(3); amy.addAssists(5); amy.addSteals(3); amy.addBlocks(0); amy.addTurnovers(2); amy.addFouls(0);
+        krithi.addPoints(11); krithi.addFGM(1);  krithi.addFGA(1); krithi.addThreePM(1); krithi.addThreePA(1); krithi.addFTM(8); krithi.addFTA(10); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+ 
+        msj.addMatch(urban);
+ 
+        // GAME 3: vs American - LOSS 49-64
+       
+        BasketballMatch american1 = new BasketballMatch("American", "TBD", 49, 64,
+                new int[]{5, 10, 21, 13}, new int[]{13, 13, 21, 18});
+ 
+        sruti.addPoints(2);   sruti.addFGM(1);   sruti.addFGA(6);   sruti.addThreePM(0); sruti.addThreePA(3); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(2); sruti.addDReb(1); sruti.addAssists(2); sruti.addSteals(3); sruti.addBlocks(1); sruti.addTurnovers(1); sruti.addFouls(1);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(3); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(1); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(1);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(2);   viven.addThreePM(0); viven.addThreePA(1); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(7);  kaylin.addFGM(2);  kaylin.addFGA(12); kaylin.addThreePM(1); kaylin.addThreePA(7); kaylin.addFTM(2); kaylin.addFTA(4); kaylin.addOReb(2); kaylin.addDReb(4); kaylin.addAssists(6); kaylin.addSteals(1); kaylin.addBlocks(1); kaylin.addTurnovers(1); kaylin.addFouls(1);
+        steph.addPoints(18);  steph.addFGM(5);   steph.addFGA(15);  steph.addThreePM(4); steph.addThreePA(6); steph.addFTM(4); steph.addFTA(6); steph.addOReb(2); steph.addDReb(2); steph.addAssists(5); steph.addSteals(1); steph.addBlocks(5); steph.addTurnovers(0); steph.addFouls(0);
+        mia.addPoints(3);     mia.addFGM(1);     mia.addFGA(2);     mia.addThreePM(1); mia.addThreePA(1); mia.addFTM(0); mia.addFTA(0); mia.addOReb(1); mia.addDReb(1); mia.addAssists(1); mia.addSteals(2); mia.addBlocks(2); mia.addTurnovers(0); mia.addFouls(2);
+        adhuna.addPoints(4);  adhuna.addFGM(1);  adhuna.addFGA(6);  adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(1); adhuna.addFTA(2); adhuna.addOReb(0); adhuna.addDReb(3); adhuna.addAssists(3); adhuna.addSteals(2); adhuna.addBlocks(1); adhuna.addTurnovers(2); adhuna.addFouls(3);
+        amy.addPoints(0);     amy.addFGM(0);     amy.addFGA(2);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(0); amy.addFTA(0); amy.addOReb(2); amy.addDReb(2); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(0); amy.addFouls(2);
+        krithi.addPoints(4);  krithi.addFGM(2);  krithi.addFGA(7);  krithi.addThreePM(0); krithi.addThreePA(2); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(3); krithi.addDReb(6); krithi.addAssists(9); krithi.addSteals(2); krithi.addBlocks(2); krithi.addTurnovers(3); krithi.addFouls(2);
+ 
+        msj.addMatch(american1);
+ 
+        // GAME 4: vs Moreau Catholic - LOSS 23-63
+        BasketballMatch moreau1 = new BasketballMatch("Moreau Catholic", "TBD", 23, 63);
+ 
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(2);  sruti.addThreePM(0); sruti.addThreePA(1); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(6); sruti.addSteals(0); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(4);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(1); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        viven.addPoints(4);   viven.addFGM(0);   viven.addFGA(4);  viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(4); viven.addFTA(4); viven.addOReb(0); viven.addDReb(1); viven.addAssists(4); viven.addSteals(1); viven.addBlocks(1); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(7);  kaylin.addFGM(3);  kaylin.addFGA(6); kaylin.addThreePM(1); kaylin.addThreePA(3); kaylin.addFTM(2); kaylin.addFTA(3); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(2); kaylin.addSteals(3); kaylin.addBlocks(4); kaylin.addTurnovers(1); kaylin.addFouls(2);
+        steph.addPoints(4);   steph.addFGM(1);   steph.addFGA(9);  steph.addThreePM(0); steph.addThreePA(0); steph.addFTM(2); steph.addFTA(2); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(1); steph.addBlocks(2); steph.addTurnovers(1); steph.addFouls(2);
+        mia.addPoints(0);     mia.addFGM(0);     mia.addFGA(3);    mia.addThreePM(0); mia.addThreePA(2); mia.addFTM(0); mia.addFTA(0); mia.addOReb(0); mia.addDReb(0); mia.addAssists(0); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(0);  adhuna.addFGM(0);  adhuna.addFGA(4); adhuna.addThreePM(0); adhuna.addThreePA(0); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(0); adhuna.addDReb(1); adhuna.addAssists(1); adhuna.addSteals(2); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(4);     amy.addFGM(2);     amy.addFGA(6);    amy.addThreePM(0); amy.addThreePA(3); amy.addFTM(0); amy.addFTA(0); amy.addOReb(2); amy.addDReb(1); amy.addAssists(3); amy.addSteals(1); amy.addBlocks(1); amy.addTurnovers(2); amy.addFouls(3);
+        krithi.addPoints(3);  krithi.addFGM(1);  krithi.addFGA(5); krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(0); krithi.addDReb(3); krithi.addAssists(3); krithi.addSteals(5); krithi.addBlocks(8); krithi.addTurnovers(3); krithi.addFouls(2);
+ 
+        msj.addMatch(moreau1);
+ 
+        // GAME 5: vs Washington - LOSS 33-47
+        BasketballMatch washington1 = new BasketballMatch("Washington", "TBD", 33, 47);
+ 
+        shaina.addPoints(1);  shaina.addFGM(0);  shaina.addFGA(2); shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(1); shaina.addFTA(2); shaina.addOReb(1); shaina.addDReb(1); shaina.addAssists(3); shaina.addSteals(1); shaina.addBlocks(0); shaina.addTurnovers(2); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(2);  sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(2); sruti.addBlocks(1); sruti.addTurnovers(2); sruti.addFouls(4);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(2); anaisha.addDReb(2); anaisha.addAssists(1); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(1); anaisha.addFouls(1);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(1);  viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(1); viven.addFouls(0);
+        kaylin.addPoints(5);  kaylin.addFGM(2);  kaylin.addFGA(9); kaylin.addThreePM(0); kaylin.addThreePA(1); kaylin.addFTM(1); kaylin.addFTA(2); kaylin.addOReb(0); kaylin.addDReb(3); kaylin.addAssists(5); kaylin.addSteals(1); kaylin.addBlocks(2); kaylin.addTurnovers(5); kaylin.addFouls(1);
+        steph.addPoints(11);  steph.addFGM(3);   steph.addFGA(9);  steph.addThreePM(1); steph.addThreePA(3); steph.addFTM(4); steph.addFTA(7); steph.addOReb(1); steph.addDReb(1); steph.addAssists(1); steph.addSteals(4); steph.addBlocks(3); steph.addTurnovers(1); steph.addFouls(5);
+        mia.addPoints(4);     mia.addFGM(1);     mia.addFGA(4);    mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(2); mia.addFTA(2); mia.addOReb(4); mia.addDReb(1); mia.addAssists(1); mia.addSteals(2); mia.addBlocks(2); mia.addTurnovers(2); mia.addFouls(2);
+        adhuna.addPoints(9);  adhuna.addFGM(2);  adhuna.addFGA(13); adhuna.addThreePM(1); adhuna.addThreePA(8); adhuna.addFTM(4); adhuna.addFTA(5); adhuna.addOReb(1); adhuna.addDReb(2); adhuna.addAssists(3); adhuna.addSteals(1); adhuna.addBlocks(2); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(2);     amy.addFGM(0);     amy.addFGA(3);    amy.addThreePM(0); amy.addThreePA(2); amy.addFTM(2); amy.addFTA(2); amy.addOReb(2); amy.addDReb(2); amy.addAssists(1); amy.addSteals(3); amy.addBlocks(1); amy.addTurnovers(1); amy.addFouls(3);
+        krithi.addPoints(5);  krithi.addFGM(2);  krithi.addFGA(7); krithi.addThreePM(0); krithi.addThreePA(1); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(2); krithi.addDReb(3); krithi.addAssists(5); krithi.addSteals(1); krithi.addBlocks(2); krithi.addTurnovers(2); krithi.addFouls(1);
+ 
+        msj.addMatch(washington1);
+ 
+        // GAME 6: vs Kennedy - WIN 62-58
+        
+        BasketballMatch kennedy1 = new BasketballMatch("Kennedy", "TBD", 62, 58,
+                new int[]{16, 18, 8, 20}, new int[]{12, 13, 17, 16});
+ 
+        sruti.addPoints(3);   sruti.addFGM(1);   sruti.addFGA(4);  sruti.addThreePM(1); sruti.addThreePA(2); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(1); sruti.addBlocks(1); sruti.addTurnovers(1); sruti.addFouls(1);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(5); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(2); anaisha.addDReb(2); anaisha.addAssists(4); anaisha.addSteals(1); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(1);   viven.addFGM(0);   viven.addFGA(1);  viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1); viven.addFTA(2); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(17); kaylin.addFGM(5);  kaylin.addFGA(10); kaylin.addThreePM(4); kaylin.addThreePA(10); kaylin.addFTM(3); kaylin.addFTA(4); kaylin.addOReb(0); kaylin.addDReb(3); kaylin.addAssists(3); kaylin.addSteals(3); kaylin.addBlocks(1); kaylin.addTurnovers(2); kaylin.addFouls(0);
+        steph.addPoints(14);  steph.addFGM(4);   steph.addFGA(11); steph.addThreePM(2); steph.addThreePA(3); steph.addFTM(4); steph.addFTA(6); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(1); steph.addBlocks(2); steph.addTurnovers(2); steph.addFouls(0);
+        mia.addPoints(0);     mia.addFGM(0);     mia.addFGA(2);    mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(0); mia.addFTA(0); mia.addOReb(0); mia.addDReb(0); mia.addAssists(0); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(21); adhuna.addFGM(8);  adhuna.addFGA(19); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(4); adhuna.addFTA(5); adhuna.addOReb(1); adhuna.addDReb(2); adhuna.addAssists(6); adhuna.addSteals(8); adhuna.addBlocks(2); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(2);     amy.addFGM(0);     amy.addFGA(3);    amy.addThreePM(0); amy.addThreePA(2); amy.addFTM(2); amy.addFTA(2); amy.addOReb(2); amy.addDReb(2); amy.addAssists(4); amy.addSteals(3); amy.addBlocks(2); amy.addTurnovers(0); amy.addFouls(0);
+        krithi.addPoints(4);  krithi.addFGM(2);  krithi.addFGA(6); krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(2); krithi.addAssists(2); krithi.addSteals(4); krithi.addBlocks(2); krithi.addTurnovers(2); krithi.addFouls(1);
+ 
+        msj.addMatch(kennedy1);
+ 
+        // GAME 7: vs James Logan - WIN 47-45
+        
+        BasketballMatch jamesLogan1 = new BasketballMatch("James Logan", "TBD", 47, 45,
+                new int[]{11, 14, 9, 13}, new int[]{10, 8, 15, 12});
+ 
+        shaina.addPoints(6);  shaina.addFGM(2);  shaina.addFGA(6);  shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(2); shaina.addFTA(4); shaina.addOReb(0); shaina.addDReb(1); shaina.addAssists(1); shaina.addSteals(1); shaina.addBlocks(0); shaina.addTurnovers(3); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(1);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(2); sruti.addAssists(2); sruti.addSteals(2); sruti.addBlocks(1); sruti.addTurnovers(4); sruti.addFouls(0);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(1); anaisha.addDReb(1); anaisha.addAssists(2); anaisha.addSteals(1); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(0); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(11); kaylin.addFGM(4);  kaylin.addFGA(12); kaylin.addThreePM(1); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(5); kaylin.addOReb(1); kaylin.addDReb(1); kaylin.addAssists(2); kaylin.addSteals(3); kaylin.addBlocks(3); kaylin.addTurnovers(1); kaylin.addFouls(1);
+        steph.addPoints(7);   steph.addFGM(2);   steph.addFGA(13);  steph.addThreePM(0); steph.addThreePA(4); steph.addFTM(3); steph.addFTA(4); steph.addOReb(1); steph.addDReb(3); steph.addAssists(4); steph.addSteals(3); steph.addBlocks(1); steph.addTurnovers(1); steph.addFouls(5);
+        mia.addPoints(3);     mia.addFGM(1);     mia.addFGA(3);     mia.addThreePM(1); mia.addThreePA(1); mia.addFTM(0); mia.addFTA(0); mia.addOReb(0); mia.addDReb(2); mia.addAssists(2); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(13); adhuna.addFGM(5);  adhuna.addFGA(19); adhuna.addThreePM(1); adhuna.addThreePA(8); adhuna.addFTM(2); adhuna.addFTA(4); adhuna.addOReb(1); adhuna.addDReb(1); adhuna.addAssists(0); adhuna.addSteals(1); adhuna.addBlocks(1); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(4);     amy.addFGM(2);     amy.addFGA(5);     amy.addThreePM(0); amy.addThreePA(1); amy.addFTM(0); amy.addFTA(0); amy.addOReb(1); amy.addDReb(3); amy.addAssists(4); amy.addSteals(1); amy.addBlocks(1); amy.addTurnovers(1); amy.addFouls(3);
+        krithi.addPoints(3);  krithi.addFGM(1);  krithi.addFGA(3);  krithi.addThreePM(1); krithi.addThreePA(1); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(3); krithi.addDReb(5); krithi.addAssists(1); krithi.addSteals(6); krithi.addBlocks(2); krithi.addTurnovers(2); krithi.addFouls(2);
+ 
+        msj.addMatch(jamesLogan1);
+ 
+        // GAME 8: vs Newark Memorial - WIN 55-40
+        
+        BasketballMatch newark = new BasketballMatch("Newark Memorial", "TBD", 55, 40,
+                new int[]{22, 17, 11, 5}, new int[]{9, 12, 11, 8});
+ 
+        shaina.addPoints(6);  shaina.addFGM(2);  shaina.addFGA(5);  shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(2); shaina.addFTA(4); shaina.addOReb(0); shaina.addDReb(2); shaina.addAssists(2); shaina.addSteals(3); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        anaisha.addPoints(2); anaisha.addFGM(1); anaisha.addFGA(3); anaisha.addThreePM(0); anaisha.addThreePA(2); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(1); anaisha.addSteals(0); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        viven.addPoints(4);   viven.addFGM(1);   viven.addFGA(5);   viven.addThreePM(0); viven.addThreePA(2); viven.addFTM(2); viven.addFTA(2); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(7);  kaylin.addFGM(3);  kaylin.addFGA(6);  kaylin.addThreePM(1); kaylin.addThreePA(3); kaylin.addFTM(0); kaylin.addFTA(0); kaylin.addOReb(0); kaylin.addDReb(2); kaylin.addAssists(2); kaylin.addSteals(2); kaylin.addBlocks(1); kaylin.addTurnovers(2); kaylin.addFouls(0);
+        steph.addPoints(5);   steph.addFGM(2);   steph.addFGA(7);   steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(1); steph.addFTA(3); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(1); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(0);
+        mia.addPoints(2);     mia.addFGM(1);     mia.addFGA(4);     mia.addThreePM(0); mia.addThreePA(1); mia.addFTM(0); mia.addFTA(0); mia.addOReb(1); mia.addDReb(1); mia.addAssists(1); mia.addSteals(1); mia.addBlocks(2); mia.addTurnovers(0); mia.addFouls(0);
+        pearl.addPoints(8);   pearl.addFGM(3);   pearl.addFGA(8);   pearl.addThreePM(0); pearl.addThreePA(1); pearl.addFTM(2); pearl.addFTA(2); pearl.addOReb(0); pearl.addDReb(3); pearl.addAssists(4); pearl.addSteals(7); pearl.addBlocks(1); pearl.addTurnovers(2); pearl.addFouls(0);
+        adhuna.addPoints(16); adhuna.addFGM(6);  adhuna.addFGA(9);  adhuna.addThreePM(1); adhuna.addThreePA(2); adhuna.addFTM(3); adhuna.addFTA(4); adhuna.addOReb(1); adhuna.addDReb(2); adhuna.addAssists(2); adhuna.addSteals(4); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(3);     amy.addFGM(1);     amy.addFGA(9);     amy.addThreePM(1); amy.addThreePA(3); amy.addFTM(0); amy.addFTA(0); amy.addOReb(1); amy.addDReb(1); amy.addAssists(2); amy.addSteals(1); amy.addBlocks(2); amy.addTurnovers(1); amy.addFouls(3);
+        krithi.addPoints(2);  krithi.addFGM(0);  krithi.addFGA(7);  krithi.addThreePM(0); krithi.addThreePA(2); krithi.addFTM(2); krithi.addFTA(4); krithi.addOReb(2); krithi.addDReb(1); krithi.addAssists(3); krithi.addSteals(4); krithi.addBlocks(3); krithi.addTurnovers(1); krithi.addFouls(1);
+ 
+        msj.addMatch(newark);
+ 
+        // GAME 9: vs Irvington - WIN 54-39
+        BasketballMatch irvington = new BasketballMatch("Irvington", "TBD", 54, 39);
+ 
+        shaina.addPoints(3);  shaina.addFGM(1);  shaina.addFGA(2);  shaina.addThreePM(1); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(1); shaina.addDReb(1); shaina.addAssists(3); shaina.addSteals(1); shaina.addBlocks(1); shaina.addTurnovers(3); shaina.addFouls(0);
+        sruti.addPoints(6);   sruti.addFGM(2);   sruti.addFGA(5);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(2); sruti.addFTA(4); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(2); sruti.addBlocks(4); sruti.addTurnovers(2); sruti.addFouls(4);
+        anaisha.addPoints(2); anaisha.addFGM(1); anaisha.addFGA(3); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(1); anaisha.addDReb(3); anaisha.addAssists(4); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        viven.addPoints(3);   viven.addFGM(0);   viven.addFGA(4);   viven.addThreePM(0); viven.addThreePA(1); viven.addFTM(3); viven.addFTA(4); viven.addOReb(0); viven.addDReb(1); viven.addAssists(2); viven.addSteals(2); viven.addBlocks(1); viven.addTurnovers(0); viven.addFouls(2);
+        kaylin.addPoints(8);  kaylin.addFGM(3);  kaylin.addFGA(11); kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(7); kaylin.addOReb(1); kaylin.addDReb(3); kaylin.addAssists(4); kaylin.addSteals(2); kaylin.addBlocks(3); kaylin.addTurnovers(2); kaylin.addFouls(1);
+        steph.addPoints(5);   steph.addFGM(0);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(0); steph.addFTM(5); steph.addFTA(10); steph.addOReb(0); steph.addDReb(3); steph.addAssists(5); steph.addSteals(1); steph.addBlocks(5); steph.addTurnovers(0); steph.addFouls(0);
+        mia.addPoints(6);     mia.addFGM(2);     mia.addFGA(4);     mia.addThreePM(0); mia.addThreePA(1); mia.addFTM(2); mia.addFTA(2); mia.addOReb(0); mia.addDReb(1); mia.addAssists(1); mia.addSteals(2); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(1);
+        pearl.addPoints(1);   pearl.addFGM(0);   pearl.addFGA(2);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(1); pearl.addFTA(2); pearl.addOReb(1); pearl.addDReb(2); pearl.addAssists(3); pearl.addSteals(1); pearl.addBlocks(2); pearl.addTurnovers(0); pearl.addFouls(2);
+        adhuna.addPoints(15); adhuna.addFGM(5);  adhuna.addFGA(15); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(4); adhuna.addFTA(8); adhuna.addOReb(1); adhuna.addDReb(8); adhuna.addAssists(6); adhuna.addSteals(1); adhuna.addBlocks(6); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(3);     amy.addFGM(1);     amy.addFGA(4);     amy.addThreePM(1); amy.addThreePA(2); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(2); amy.addAssists(2); amy.addSteals(1); amy.addBlocks(1); amy.addTurnovers(3); amy.addFouls(1);
+        krithi.addPoints(0);  krithi.addFGM(0);  krithi.addFGA(1);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(3); krithi.addAssists(2); krithi.addSteals(5); krithi.addBlocks(4); krithi.addTurnovers(4); krithi.addFouls(0);
+ 
+        msj.addMatch(irvington);
+ 
+        // GAME 10: vs Dougherty Valley - LOSS 43-65
+        
+        BasketballMatch doughertyValley = new BasketballMatch("Dougherty Valley", "TBD", 43, 65,
+                new int[]{13, 9, 6, 15}, new int[]{26, 17, 14, 8});
+ 
+        shaina.addPoints(3);  shaina.addFGM(1);  shaina.addFGA(3);  shaina.addThreePM(1); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(3); shaina.addDReb(3); shaina.addAssists(2); shaina.addSteals(3); shaina.addBlocks(0); shaina.addTurnovers(3); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(4);   sruti.addThreePM(0); sruti.addThreePA(2); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(2); sruti.addAssists(2); sruti.addSteals(1); sruti.addBlocks(3); sruti.addTurnovers(4); sruti.addFouls(0);
+        anaisha.addPoints(7); anaisha.addFGM(3); anaisha.addFGA(4); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(1); anaisha.addFTA(2); anaisha.addOReb(1); anaisha.addDReb(1); anaisha.addAssists(2); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(0); viven.addFTA(0); viven.addOReb(2); viven.addDReb(2); viven.addAssists(1); viven.addSteals(3); viven.addBlocks(1); viven.addTurnovers(1); viven.addFouls(1);
+        kaylin.addPoints(11); kaylin.addFGM(4);  kaylin.addFGA(10); kaylin.addThreePM(1); kaylin.addThreePA(3); kaylin.addFTM(2); kaylin.addFTA(2); kaylin.addOReb(0); kaylin.addDReb(2); kaylin.addAssists(2); kaylin.addSteals(1); kaylin.addBlocks(2); kaylin.addTurnovers(2); kaylin.addFouls(1);
+        steph.addPoints(9);   steph.addFGM(4);   steph.addFGA(8);   steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(1); steph.addFTA(1); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(1); steph.addBlocks(1); steph.addTurnovers(0); steph.addFouls(1);
+        pearl.addPoints(0);   pearl.addFGM(0);   pearl.addFGA(1);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(1); pearl.addAssists(1); pearl.addSteals(2); pearl.addBlocks(0); pearl.addTurnovers(0); pearl.addFouls(2);
+        adhuna.addPoints(9);  adhuna.addFGM(3);  adhuna.addFGA(10); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(2); adhuna.addFTA(4); adhuna.addOReb(5); adhuna.addDReb(5); adhuna.addAssists(1); adhuna.addSteals(1); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        krithi.addPoints(4);  krithi.addFGM(2);  krithi.addFGA(4);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(4); krithi.addDReb(4); krithi.addAssists(2); krithi.addSteals(2); krithi.addBlocks(1); krithi.addTurnovers(0); krithi.addFouls(1);
+ 
+        msj.addMatch(doughertyValley);
+ 
+        // GAME 11: vs American - LOSS 51-59
+        
+        BasketballMatch american2 = new BasketballMatch("American", "TBD", 51, 59,
+                new int[]{16, 12, 12, 11}, new int[]{15, 18, 14, 12});
+ 
+        shaina.addPoints(2);  shaina.addFGM(1);  shaina.addFGA(5);  shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(1); shaina.addDReb(1); shaina.addAssists(2); shaina.addSteals(1); shaina.addBlocks(1); shaina.addTurnovers(3); shaina.addFouls(0);
+        sruti.addPoints(3);   sruti.addFGM(1);   sruti.addFGA(4);   sruti.addThreePM(1); sruti.addThreePA(3); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(2); sruti.addBlocks(1); sruti.addTurnovers(4); sruti.addFouls(0);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(2); anaisha.addAssists(1); anaisha.addSteals(3); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(1);
+        kaylin.addPoints(12); kaylin.addFGM(5);  kaylin.addFGA(9);  kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(4); kaylin.addOReb(1); kaylin.addDReb(6); kaylin.addAssists(7); kaylin.addSteals(4); kaylin.addBlocks(1); kaylin.addTurnovers(4); kaylin.addFouls(1);
+        steph.addPoints(14);  steph.addFGM(5);   steph.addFGA(13);  steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(4); steph.addFTA(8); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(2); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(0);
+        adhuna.addPoints(20); adhuna.addFGM(4);  adhuna.addFGA(12); adhuna.addThreePM(2); adhuna.addThreePA(9); adhuna.addFTM(10); adhuna.addFTA(12); adhuna.addOReb(0); adhuna.addDReb(1); adhuna.addAssists(1); adhuna.addSteals(9); adhuna.addBlocks(1); adhuna.addTurnovers(2); adhuna.addFouls(1);
+        amy.addPoints(0);     amy.addFGM(0);     amy.addFGA(3);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(2); amy.addBlocks(3); amy.addTurnovers(0); amy.addFouls(2);
+        krithi.addPoints(0);  krithi.addFGM(0);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(3); krithi.addAssists(4); krithi.addSteals(7); krithi.addBlocks(1); krithi.addTurnovers(3); krithi.addFouls(1);
+ 
+        msj.addMatch(american2);
+ 
+        // GAME 12: vs Moreau Catholic - LOSS 41-66
+        
+        BasketballMatch moreau2 = new BasketballMatch("Moreau Catholic", "TBD", 41, 66,
+                new int[]{13, 12, 8, 8}, new int[]{13, 18, 17, 18});
+ 
+        shaina.addPoints(0);  shaina.addFGM(0);  shaina.addFGA(2);  shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(0); shaina.addAssists(0); shaina.addSteals(0); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        sruti.addPoints(3);   sruti.addFGM(1);   sruti.addFGA(2);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(1); sruti.addFTA(2); sruti.addOReb(3); sruti.addDReb(2); sruti.addAssists(2); sruti.addSteals(1); sruti.addBlocks(1); sruti.addTurnovers(4); sruti.addFouls(0);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(5); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(1); anaisha.addDReb(1); anaisha.addAssists(2); anaisha.addSteals(1); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(1);   viven.addFGM(0);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1); viven.addFTA(2); viven.addOReb(1); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(9);  kaylin.addFGM(3);  kaylin.addFGA(7);  kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(3); kaylin.addFTA(6); kaylin.addOReb(1); kaylin.addDReb(2); kaylin.addAssists(1); kaylin.addSteals(3); kaylin.addBlocks(6); kaylin.addTurnovers(1); kaylin.addFouls(2);
+        steph.addPoints(10);  steph.addFGM(2);   steph.addFGA(12);  steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(6); steph.addFTA(9); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(1); steph.addBlocks(1); steph.addTurnovers(2); steph.addFouls(2);
+        adhuna.addPoints(13); adhuna.addFGM(5);  adhuna.addFGA(16); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(2); adhuna.addFTA(4); adhuna.addOReb(1); adhuna.addDReb(3); adhuna.addAssists(4); adhuna.addSteals(4); adhuna.addBlocks(8); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(4);     amy.addFGM(2);     amy.addFGA(3);     amy.addThreePM(0); amy.addThreePA(1); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(1); amy.addAssists(3); amy.addSteals(2); amy.addBlocks(0); amy.addTurnovers(1); amy.addFouls(0);
+        krithi.addPoints(2);  krithi.addFGM(1);  krithi.addFGA(2);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(2); krithi.addDReb(3); krithi.addAssists(2); krithi.addSteals(5); krithi.addBlocks(3); krithi.addTurnovers(2); krithi.addFouls(2);
+ 
+        msj.addMatch(moreau2);
+ 
+        // GAME 13: vs Washington - WIN 33-30
+        BasketballMatch washington2 = new BasketballMatch("Washington", "TBD", 33, 30);
+ 
+        shaina.addPoints(3);  shaina.addFGM(1);  shaina.addFGA(3);  shaina.addThreePM(1); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(1); shaina.addAssists(1); shaina.addSteals(2); shaina.addBlocks(3); shaina.addTurnovers(1); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(1);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(4); sruti.addSteals(0); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(0);
+        anaisha.addPoints(2); anaisha.addFGM(1); anaisha.addFGA(2); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(2); anaisha.addAssists(1); anaisha.addSteals(1); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        viven.addPoints(1);   viven.addFGM(0);   viven.addFGA(2);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1); viven.addFTA(2); viven.addOReb(1); viven.addDReb(3); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(3); viven.addTurnovers(1); viven.addFouls(0);
+        kaylin.addPoints(2);  kaylin.addFGM(1);  kaylin.addFGA(0);  kaylin.addThreePM(0); kaylin.addThreePA(0); kaylin.addFTM(0); kaylin.addFTA(0); kaylin.addOReb(2); kaylin.addDReb(3); kaylin.addAssists(5); kaylin.addSteals(5); kaylin.addBlocks(1); kaylin.addTurnovers(5); kaylin.addFouls(1);
+        steph.addPoints(6);   steph.addFGM(2);   steph.addFGA(9);   steph.addThreePM(1); steph.addThreePA(4); steph.addFTM(1); steph.addFTA(2); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(3); steph.addBlocks(3); steph.addTurnovers(1); steph.addFouls(5);
+        mia.addPoints(1);     mia.addFGM(0);     mia.addFGA(1);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(1); mia.addFTA(2); mia.addOReb(1); mia.addDReb(2); mia.addAssists(2); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(15); adhuna.addFGM(5);  adhuna.addFGA(16); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(4); adhuna.addFTA(6); adhuna.addOReb(0); adhuna.addDReb(2); adhuna.addAssists(2); adhuna.addSteals(3); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(4);     amy.addFGM(0);     amy.addFGA(4);     amy.addThreePM(0); amy.addThreePA(2); amy.addFTM(4); amy.addFTA(4); amy.addOReb(2); amy.addDReb(2); amy.addAssists(2); amy.addSteals(2); amy.addBlocks(3); amy.addTurnovers(2); amy.addFouls(2);
+        krithi.addPoints(2);  krithi.addFGM(1);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(1); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(2); krithi.addDReb(2); krithi.addAssists(3); krithi.addSteals(2); krithi.addBlocks(1); krithi.addTurnovers(2); krithi.addFouls(1);
+ 
+        msj.addMatch(washington2);
+ 
+        // GAME 14: vs Fairfield - WIN 37-36
+        
+        BasketballMatch fairfield = new BasketballMatch("Fairfield", "TBD", 37, 36);
+ 
+        kaylin.addPoints(1);  kaylin.addFGM(0);  kaylin.addFGA(1);  kaylin.addThreePM(0); kaylin.addThreePA(1); kaylin.addFTM(1); kaylin.addFTA(2); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(1); kaylin.addSteals(1); kaylin.addBlocks(0); kaylin.addTurnovers(1); kaylin.addFouls(0);
+        steph.addPoints(4);   steph.addFGM(2);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(0); steph.addFTM(0); steph.addFTA(0); steph.addOReb(0); steph.addDReb(2); steph.addAssists(4); steph.addSteals(2); steph.addBlocks(0); steph.addTurnovers(1); steph.addFouls(0);
+        adhuna.addPoints(12); adhuna.addFGM(3);  adhuna.addFGA(2);  adhuna.addThreePM(1); adhuna.addThreePA(5); adhuna.addFTM(6); adhuna.addFTA(8); adhuna.addOReb(0); adhuna.addDReb(2); adhuna.addAssists(2); adhuna.addSteals(3); adhuna.addBlocks(0); adhuna.addTurnovers(2); adhuna.addFouls(0);
+        amy.addPoints(5);     amy.addFGM(1);     amy.addFGA(3);     amy.addThreePM(1); amy.addThreePA(2); amy.addFTM(2); amy.addFTA(2); amy.addOReb(0); amy.addDReb(1); amy.addAssists(3); amy.addSteals(2); amy.addBlocks(0); amy.addTurnovers(1); amy.addFouls(0);
+        krithi.addPoints(5);  krithi.addFGM(2);  krithi.addFGA(2);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+        // remaining ~10 pts generated
+        shaina.addPoints(4);  shaina.addFGM(1);  shaina.addFGA(3);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(2); shaina.addFTA(3); shaina.addOReb(1); shaina.addDReb(2); shaina.addAssists(1); shaina.addSteals(1); shaina.addBlocks(0); shaina.addTurnovers(1); shaina.addFouls(2);
+        sruti.addPoints(4);   sruti.addFGM(1);   sruti.addFGA(3);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(2); sruti.addFTA(3); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(1); sruti.addBlocks(0); sruti.addTurnovers(1); sruti.addFouls(2);
+        mia.addPoints(2);     mia.addFGM(1);     mia.addFGA(2);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(0); mia.addFTA(0); mia.addOReb(0); mia.addDReb(1); mia.addAssists(0); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+ 
+        msj.addMatch(fairfield);
+ 
+        // GAME 15: vs Sacramento - WIN 41-29
+        
+        BasketballMatch sacramento = new BasketballMatch("Sacramento", "TBD", 41, 29);
+ 
+        viven.addPoints(1);   viven.addFGM(0);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1); viven.addFTA(2); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(0); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(0);
+        kaylin.addPoints(10); kaylin.addFGM(4);  kaylin.addFGA(12); kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(2); kaylin.addOReb(1); kaylin.addDReb(0); kaylin.addAssists(1); kaylin.addSteals(2); kaylin.addBlocks(0); kaylin.addTurnovers(1); kaylin.addFouls(0);
+        steph.addPoints(4);   steph.addFGM(1);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(0); steph.addFTM(2); steph.addFTA(2); steph.addOReb(0); steph.addDReb(2); steph.addAssists(4); steph.addSteals(2); steph.addBlocks(1); steph.addTurnovers(0); steph.addFouls(0);
+        pearl.addPoints(2);   pearl.addFGM(1);   pearl.addFGA(2);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(2); pearl.addAssists(2); pearl.addSteals(0); pearl.addBlocks(0); pearl.addTurnovers(0); pearl.addFouls(0);
+        adhuna.addPoints(13); adhuna.addFGM(6);  adhuna.addFGA(2);  adhuna.addThreePM(1); adhuna.addThreePA(5); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(0); adhuna.addDReb(1); adhuna.addAssists(3); adhuna.addSteals(2); adhuna.addBlocks(0); adhuna.addTurnovers(3); adhuna.addFouls(0);
+        amy.addPoints(6);     amy.addFGM(3);     amy.addFGA(3);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(3); amy.addAssists(6); amy.addSteals(3); amy.addBlocks(2); amy.addTurnovers(1); amy.addFouls(0);
+        krithi.addPoints(5);  krithi.addFGM(1);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(1); krithi.addFTM(3); krithi.addFTA(4); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+ 
+        msj.addMatch(sacramento);
+ 
+        // GAME 16: vs Edison - WIN 55-41
+        
+        BasketballMatch edison = new BasketballMatch("Edison", "TBD", 55, 41);
+ 
+        shaina.addPoints(3);  shaina.addFGM(1);  shaina.addFGA(4);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(1); shaina.addFTA(2); shaina.addOReb(0); shaina.addDReb(3); shaina.addAssists(4); shaina.addSteals(0); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        anaisha.addPoints(2); anaisha.addFGM(1); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(0); anaisha.addSteals(2); anaisha.addBlocks(0); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(3);   viven.addFGM(1);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(1); viven.addFTA(2); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(0);
+        kaylin.addPoints(14); kaylin.addFGM(5);  kaylin.addFGA(12); kaylin.addThreePM(0); kaylin.addThreePA(4); kaylin.addFTM(4); kaylin.addFTA(4); kaylin.addOReb(1); kaylin.addDReb(4); kaylin.addAssists(1); kaylin.addSteals(2); kaylin.addBlocks(0); kaylin.addTurnovers(1); kaylin.addFouls(0);
+        steph.addPoints(9);   steph.addFGM(4);   steph.addFGA(1);   steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(1); steph.addFTA(2); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(5); steph.addBlocks(0); steph.addTurnovers(1); steph.addFouls(0);
+        mia.addPoints(6);     mia.addFGM(2);     mia.addFGA(2);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(2); mia.addFTA(2); mia.addOReb(0); mia.addDReb(2); mia.addAssists(2); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(13); adhuna.addFGM(5);  adhuna.addFGA(2);  adhuna.addThreePM(1); adhuna.addThreePA(2); adhuna.addFTM(6); adhuna.addFTA(7); adhuna.addOReb(0); adhuna.addDReb(3); adhuna.addAssists(5); adhuna.addSteals(2); adhuna.addBlocks(0); adhuna.addTurnovers(3); adhuna.addFouls(0);
+        amy.addPoints(5);     amy.addFGM(2);     amy.addFGA(1);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(1); amy.addFTA(2); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(0); amy.addTurnovers(1); amy.addFouls(0);
+ 
+        msj.addMatch(edison);
+ 
+        // GAME 17: vs Lowell - WIN 55-52
+        
+        BasketballMatch lowell = new BasketballMatch("Lowell", "TBD", 55, 52,
+                new int[]{14, 12, 11, 18}, new int[]{10, 16, 20, 6});
+ 
+        shaina.addPoints(0);  shaina.addFGM(0);  shaina.addFGA(2);  shaina.addThreePM(0); shaina.addThreePA(1); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(1); shaina.addAssists(4); shaina.addSteals(0); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(2);   sruti.addThreePM(0); sruti.addThreePA(1); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(0); sruti.addSteals(2); sruti.addBlocks(1); sruti.addTurnovers(0); sruti.addFouls(0);
+        anaisha.addPoints(2); anaisha.addFGM(1); anaisha.addFGA(3); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(4); anaisha.addDReb(4); anaisha.addAssists(1); anaisha.addSteals(2); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(1);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(3);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(0); viven.addAssists(0); viven.addSteals(2); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(15); kaylin.addFGM(5);  kaylin.addFGA(8);  kaylin.addThreePM(1); kaylin.addThreePA(4); kaylin.addFTM(4); kaylin.addFTA(6); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(2); kaylin.addSteals(1); kaylin.addBlocks(1); kaylin.addTurnovers(2); kaylin.addFouls(1);
+        steph.addPoints(9);   steph.addFGM(3);   steph.addFGA(8);   steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(3); steph.addFTA(6); steph.addOReb(1); steph.addDReb(2); steph.addAssists(3); steph.addSteals(1); steph.addBlocks(5); steph.addTurnovers(1); steph.addFouls(1);
+        mia.addPoints(1);     mia.addFGM(0);     mia.addFGA(1);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(1); mia.addFTA(2); mia.addOReb(1); mia.addDReb(2); mia.addAssists(1); mia.addSteals(2); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        pearl.addPoints(2);   pearl.addFGM(1);   pearl.addFGA(1);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(2); pearl.addAssists(1); pearl.addSteals(2); pearl.addBlocks(0); pearl.addTurnovers(2); pearl.addFouls(0);
+        adhuna.addPoints(24); adhuna.addFGM(4);  adhuna.addFGA(6);  adhuna.addThreePM(2); adhuna.addThreePA(6); adhuna.addFTM(14); adhuna.addFTA(16); adhuna.addOReb(2); adhuna.addDReb(2); adhuna.addAssists(6); adhuna.addSteals(4); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(2);     amy.addFGM(1);     amy.addFGA(9);     amy.addThreePM(0); amy.addThreePA(2); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(2); amy.addFouls(1);
+        krithi.addPoints(1);  krithi.addFGM(0);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(0); krithi.addDReb(1); krithi.addAssists(4); krithi.addSteals(5); krithi.addBlocks(3); krithi.addTurnovers(1); krithi.addFouls(1);
+ 
+        msj.addMatch(lowell);
+ 
+        // GAME 18: vs Granada - WIN 63-60
+        BasketballMatch granada = new BasketballMatch("Granada", "TBD", 63, 60);
+ 
+        shaina.addPoints(0);  shaina.addFGM(0);  shaina.addFGA(4);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(3); shaina.addAssists(3); shaina.addSteals(5); shaina.addBlocks(4); shaina.addTurnovers(0); shaina.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(1);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(0); sruti.addAssists(0); sruti.addSteals(0); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(0);
+        anaisha.addPoints(5); anaisha.addFGM(2); anaisha.addFGA(6); anaisha.addThreePM(0); anaisha.addThreePA(1); anaisha.addFTM(1); anaisha.addFTA(2); anaisha.addOReb(1); anaisha.addDReb(2); anaisha.addAssists(3); anaisha.addSteals(1); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(1);
+        viven.addPoints(2);   viven.addFGM(1);   viven.addFGA(3);   viven.addThreePM(0); viven.addThreePA(1); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(2); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(0);
+        kaylin.addPoints(17); kaylin.addFGM(6);  kaylin.addFGA(8);  kaylin.addThreePM(1); kaylin.addThreePA(5); kaylin.addFTM(4); kaylin.addFTA(7); kaylin.addOReb(0); kaylin.addDReb(7); kaylin.addAssists(5); kaylin.addSteals(6); kaylin.addBlocks(4); kaylin.addTurnovers(3); kaylin.addFouls(3);
+        steph.addPoints(15);  steph.addFGM(4);   steph.addFGA(8);   steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(7); steph.addFTA(12); steph.addOReb(0); steph.addDReb(3); steph.addAssists(3); steph.addSteals(1); steph.addBlocks(5); steph.addTurnovers(1); steph.addFouls(1);
+        mia.addPoints(1);     mia.addFGM(0);     mia.addFGA(2);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(1); mia.addFTA(2); mia.addOReb(1); mia.addDReb(2); mia.addAssists(2); mia.addSteals(0); mia.addBlocks(0); mia.addTurnovers(0); mia.addFouls(0);
+        adhuna.addPoints(15); adhuna.addFGM(6);  adhuna.addFGA(15); adhuna.addThreePM(1); adhuna.addThreePA(3); adhuna.addFTM(2); adhuna.addFTA(4); adhuna.addOReb(0); adhuna.addDReb(3); adhuna.addAssists(3); adhuna.addSteals(3); adhuna.addBlocks(2); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(9);     amy.addFGM(3);     amy.addFGA(8);     amy.addThreePM(1); amy.addThreePA(3); amy.addFTM(2); amy.addFTA(2); amy.addOReb(0); amy.addDReb(1); amy.addAssists(2); amy.addSteals(4); amy.addBlocks(2); amy.addTurnovers(1); amy.addFouls(2);
+        krithi.addPoints(0);  krithi.addFGM(0);  krithi.addFGA(2);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(1); krithi.addAssists(3); krithi.addSteals(4); krithi.addBlocks(2); krithi.addTurnovers(0); krithi.addFouls(2);
+ 
+        msj.addMatch(granada);
+ 
+        // GAME 19: vs Kennedy - WIN 57-42
+        
+        BasketballMatch kennedy2 = new BasketballMatch("Kennedy", "TBD", 57, 42,
+                new int[]{13, 17, 14, 13}, new int[]{7, 5, 12, 18});
+ 
+        shaina.addPoints(11); shaina.addFGM(4);  shaina.addFGA(6);  shaina.addThreePM(1); shaina.addThreePA(3); shaina.addFTM(2); shaina.addFTA(4); shaina.addOReb(1); shaina.addDReb(4); shaina.addAssists(3); shaina.addSteals(0); shaina.addBlocks(0); shaina.addTurnovers(9); shaina.addFouls(0);
+        sruti.addPoints(2);   sruti.addFGM(1);   sruti.addFGA(4);   sruti.addThreePM(0); sruti.addThreePA(2); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(2); sruti.addAssists(1); sruti.addSteals(3); sruti.addBlocks(2); sruti.addTurnovers(1); sruti.addFouls(4);
+        anaisha.addPoints(4); anaisha.addFGM(2); anaisha.addFGA(8); anaisha.addThreePM(0); anaisha.addThreePA(2); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(4); anaisha.addDReb(2); anaisha.addAssists(4); anaisha.addSteals(6); anaisha.addBlocks(1); anaisha.addTurnovers(1); anaisha.addFouls(4);
+        viven.addPoints(0);   viven.addFGM(0);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(0); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(8);  kaylin.addFGM(3);  kaylin.addFGA(7);  kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(5); kaylin.addOReb(0); kaylin.addDReb(3); kaylin.addAssists(3); kaylin.addSteals(6); kaylin.addBlocks(2); kaylin.addTurnovers(3); kaylin.addFouls(1);
+        steph.addPoints(11);  steph.addFGM(5);   steph.addFGA(11);  steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(1); steph.addFTA(2); steph.addOReb(0); steph.addDReb(1); steph.addAssists(3); steph.addSteals(1); steph.addBlocks(1); steph.addTurnovers(5); steph.addFouls(0);
+        mia.addPoints(0);     mia.addFGM(0);     mia.addFGA(1);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(0); mia.addFTA(0); mia.addOReb(1); mia.addDReb(1); mia.addAssists(2); mia.addSteals(2); mia.addBlocks(1); mia.addTurnovers(2); mia.addFouls(0);
+        pearl.addPoints(2);   pearl.addFGM(1);   pearl.addFGA(2);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(1); pearl.addAssists(2); pearl.addSteals(1); pearl.addBlocks(2); pearl.addTurnovers(2); pearl.addFouls(0);
+        adhuna.addPoints(13); adhuna.addFGM(6);  adhuna.addFGA(13); adhuna.addThreePM(1); adhuna.addThreePA(6); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(1); adhuna.addDReb(2); adhuna.addAssists(4); adhuna.addSteals(6); adhuna.addBlocks(2); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(2);     amy.addFGM(1);     amy.addFGA(4);     amy.addThreePM(0); amy.addThreePA(1); amy.addFTM(0); amy.addFTA(0); amy.addOReb(1); amy.addDReb(1); amy.addAssists(2); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(1); amy.addFouls(4);
+        krithi.addPoints(4);  krithi.addFGM(2);  krithi.addFGA(2);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(1); krithi.addAssists(3); krithi.addSteals(2); krithi.addBlocks(2); krithi.addTurnovers(2); krithi.addFouls(2);
+ 
+        msj.addMatch(kennedy2);
+ 
+        // GAME 20: vs Manteca - WIN 43-37
+       
+        BasketballMatch manteca = new BasketballMatch("Manteca", "TBD", 43, 37,
+                new int[]{12, 11, 7, 13}, new int[]{8, 9, 8, 12});
+ 
+        gia.addPoints(0);     gia.addFGM(0);     gia.addFGA(1);     gia.addThreePM(0); gia.addThreePA(0); gia.addFTM(0); gia.addFTA(0); gia.addOReb(0); gia.addDReb(1); gia.addAssists(1); gia.addSteals(1); gia.addBlocks(3); gia.addTurnovers(0); gia.addFouls(0);
+        sruti.addPoints(3);   sruti.addFGM(1);   sruti.addFGA(1);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(1); sruti.addFTA(2); sruti.addOReb(0); sruti.addDReb(3); sruti.addAssists(1); sruti.addSteals(1); sruti.addBlocks(2); sruti.addTurnovers(1); sruti.addFouls(4);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(2); anaisha.addAssists(2); anaisha.addSteals(2); anaisha.addBlocks(0); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(2);   viven.addFGM(1);   viven.addFGA(2);   viven.addThreePM(0); viven.addThreePA(2); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(0);
+        kaylin.addPoints(3);  kaylin.addFGM(1);  kaylin.addFGA(4);  kaylin.addThreePM(0); kaylin.addThreePA(1); kaylin.addFTM(1); kaylin.addFTA(2); kaylin.addOReb(0); kaylin.addDReb(3); kaylin.addAssists(3); kaylin.addSteals(2); kaylin.addBlocks(1); kaylin.addTurnovers(2); kaylin.addFouls(1);
+        steph.addPoints(2);   steph.addFGM(1);   steph.addFGA(7);   steph.addThreePM(0); steph.addThreePA(3); steph.addFTM(0); steph.addFTA(0); steph.addOReb(0); steph.addDReb(1); steph.addAssists(5); steph.addSteals(1); steph.addBlocks(0); steph.addTurnovers(1); steph.addFouls(1);
+        mia.addPoints(0);     mia.addFGM(0);     mia.addFGA(3);     mia.addThreePM(0); mia.addThreePA(0); mia.addFTM(0); mia.addFTA(0); mia.addOReb(0); mia.addDReb(1); mia.addAssists(2); mia.addSteals(0); mia.addBlocks(1); mia.addTurnovers(0); mia.addFouls(0);
+        pearl.addPoints(4);   pearl.addFGM(2);   pearl.addFGA(3);   pearl.addThreePM(0); pearl.addThreePA(2); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(1); pearl.addAssists(2); pearl.addSteals(2); pearl.addBlocks(0); pearl.addTurnovers(0); pearl.addFouls(0);
+        adhuna.addPoints(16); adhuna.addFGM(6);  adhuna.addFGA(9);  adhuna.addThreePM(4); adhuna.addThreePA(5); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(1); adhuna.addDReb(3); adhuna.addAssists(4); adhuna.addSteals(1); adhuna.addBlocks(1); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(10);    amy.addFGM(4);     amy.addFGA(5);     amy.addThreePM(0); amy.addThreePA(2); amy.addFTM(2); amy.addFTA(4); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(2); amy.addFouls(1);
+        krithi.addPoints(3);  krithi.addFGM(1);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(1); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(0); krithi.addDReb(3); krithi.addAssists(3); krithi.addSteals(1); krithi.addBlocks(1); krithi.addTurnovers(1); krithi.addFouls(0);
+ 
+        msj.addMatch(manteca);
+ 
+        // GAME 21: vs Alameda - LOSS 36-79
+        
+        BasketballMatch alameda = new BasketballMatch("Alameda", "TBD", 36, 79,
+                new int[]{9, 10, 9, 8}, new int[]{21, 23, 26, 9});
+ 
+        shaina.addPoints(4);  shaina.addFGM(2);  shaina.addFGA(2);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(4); shaina.addAssists(3); shaina.addSteals(2); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        gia.addPoints(0);     gia.addFGM(0);     gia.addFGA(0);     gia.addThreePM(0); gia.addThreePA(0); gia.addFTM(0); gia.addFTA(0); gia.addOReb(0); gia.addDReb(1); gia.addAssists(1); gia.addSteals(1); gia.addBlocks(1); gia.addTurnovers(3); gia.addFouls(0);
+        sruti.addPoints(0);   sruti.addFGM(0);   sruti.addFGA(0);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(3); sruti.addBlocks(4); sruti.addTurnovers(0); sruti.addFouls(0);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(2); anaisha.addAssists(2); anaisha.addSteals(1); anaisha.addBlocks(4); anaisha.addTurnovers(1); anaisha.addFouls(0);
+        viven.addPoints(2);   viven.addFGM(1);   viven.addFGA(9);   viven.addThreePM(0); viven.addThreePA(3); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(2); viven.addAssists(1); viven.addSteals(1); viven.addBlocks(1); viven.addTurnovers(0); viven.addFouls(1);
+        kaylin.addPoints(8);  kaylin.addFGM(3);  kaylin.addFGA(7);  kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(2); kaylin.addFTA(4); kaylin.addOReb(1); kaylin.addDReb(1); kaylin.addAssists(1); kaylin.addSteals(1); kaylin.addBlocks(3); kaylin.addTurnovers(3); kaylin.addFouls(1);
+        steph.addPoints(6);   steph.addFGM(2);   steph.addFGA(13);  steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(2); steph.addFTA(4); steph.addOReb(1); steph.addDReb(1); steph.addAssists(2); steph.addSteals(3); steph.addBlocks(2); steph.addTurnovers(1); steph.addFouls(5);
+        mia.addPoints(3);     mia.addFGM(1);     mia.addFGA(2);     mia.addThreePM(0); mia.addThreePA(1); mia.addFTM(1); mia.addFTA(2); mia.addOReb(0); mia.addDReb(2); mia.addAssists(2); mia.addSteals(2); mia.addBlocks(1); mia.addTurnovers(0); mia.addFouls(0);
+        pearl.addPoints(0);   pearl.addFGM(0);   pearl.addFGA(3);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(0); pearl.addFTA(0); pearl.addOReb(0); pearl.addDReb(3); pearl.addAssists(3); pearl.addSteals(1); pearl.addBlocks(2); pearl.addTurnovers(2); pearl.addFouls(0);
+        adhuna.addPoints(0);  adhuna.addFGM(0);  adhuna.addFGA(1);  adhuna.addThreePM(0); adhuna.addThreePA(0); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(0); adhuna.addDReb(5); adhuna.addAssists(6); adhuna.addSteals(2); adhuna.addBlocks(0); adhuna.addTurnovers(2); adhuna.addFouls(3);
+        amy.addPoints(0);     amy.addFGM(0);     amy.addFGA(1);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(1); amy.addFouls(1);
+        krithi.addPoints(4);  krithi.addFGM(2);  krithi.addFGA(5);  krithi.addThreePM(0); krithi.addThreePA(2); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(4); krithi.addDReb(3); krithi.addAssists(3); krithi.addSteals(3); krithi.addBlocks(1); krithi.addTurnovers(4); krithi.addFouls(4);
+ 
+        msj.addMatch(alameda);
+ 
+        // GAME 22: vs James Logan - LOSS 32-53
+        
+        BasketballMatch jamesLogan2 = new BasketballMatch("James Logan", "TBD", 32, 53,
+                new int[]{7, 11, 12, 2}, new int[]{11, 6, 16, 20});
+ 
+        shaina.addPoints(0);  shaina.addFGM(0);  shaina.addFGA(1);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(0); shaina.addFTA(0); shaina.addOReb(0); shaina.addDReb(2); shaina.addAssists(2); shaina.addSteals(2); shaina.addBlocks(2); shaina.addTurnovers(0); shaina.addFouls(0);
+        gia.addPoints(0);     gia.addFGM(0);     gia.addFGA(1);     gia.addThreePM(0); gia.addThreePA(0); gia.addFTM(0); gia.addFTA(0); gia.addOReb(0); gia.addDReb(1); gia.addAssists(1); gia.addSteals(1); gia.addBlocks(1); gia.addTurnovers(1); gia.addFouls(0);
+        sruti.addPoints(2);   sruti.addFGM(1);   sruti.addFGA(1);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(2); sruti.addAssists(2); sruti.addSteals(1); sruti.addBlocks(4); sruti.addTurnovers(2); sruti.addFouls(0);
+        anaisha.addPoints(0); anaisha.addFGM(0); anaisha.addFGA(4); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(0); anaisha.addFTA(0); anaisha.addOReb(0); anaisha.addDReb(2); anaisha.addAssists(2); anaisha.addSteals(1); anaisha.addBlocks(2); anaisha.addTurnovers(2); anaisha.addFouls(0);
+        viven.addPoints(8);   viven.addFGM(4);   viven.addFGA(9);   viven.addThreePM(0); viven.addThreePA(3); viven.addFTM(0); viven.addFTA(0); viven.addOReb(0); viven.addDReb(1); viven.addAssists(4); viven.addSteals(1); viven.addBlocks(1); viven.addTurnovers(4); viven.addFouls(0);
+        kaylin.addPoints(3);  kaylin.addFGM(1);  kaylin.addFGA(5);  kaylin.addThreePM(0); kaylin.addThreePA(2); kaylin.addFTM(1); kaylin.addFTA(2); kaylin.addOReb(1); kaylin.addDReb(4); kaylin.addAssists(5); kaylin.addSteals(3); kaylin.addBlocks(1); kaylin.addTurnovers(6); kaylin.addFouls(1);
+        steph.addPoints(10);  steph.addFGM(3);   steph.addFGA(9);   steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(4); steph.addFTA(6); steph.addOReb(0); steph.addDReb(1); steph.addAssists(1); steph.addSteals(2); steph.addBlocks(2); steph.addTurnovers(2); steph.addFouls(2);
+        adhuna.addPoints(5);  adhuna.addFGM(2);  adhuna.addFGA(14); adhuna.addThreePM(1); adhuna.addThreePA(4); adhuna.addFTM(0); adhuna.addFTA(0); adhuna.addOReb(2); adhuna.addDReb(6); adhuna.addAssists(8); adhuna.addSteals(2); adhuna.addBlocks(3); adhuna.addTurnovers(3); adhuna.addFouls(2);
+        amy.addPoints(4);     amy.addFGM(2);     amy.addFGA(6);     amy.addThreePM(0); amy.addThreePA(3); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(1); amy.addAssists(1); amy.addSteals(1); amy.addBlocks(3); amy.addTurnovers(2); amy.addFouls(2);
+        krithi.addPoints(0);  krithi.addFGM(0);  krithi.addFGA(1);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(1); krithi.addAssists(0); krithi.addSteals(2); krithi.addBlocks(0); krithi.addTurnovers(2); krithi.addFouls(0);
+ 
+        msj.addMatch(jamesLogan2);
+ 
+        // GAME 23: vs Foothill - LOSS 43-46 
+        
+        BasketballMatch foothill = new BasketballMatch("Foothill", "TBD", 43, 46,
+                new int[]{15, 7, 14, 7}, new int[]{12, 9, 12, 13});
+ 
+        shaina.addPoints(3);  shaina.addFGM(1);  shaina.addFGA(3);  shaina.addThreePM(0); shaina.addThreePA(0); shaina.addFTM(1); shaina.addFTA(2); shaina.addOReb(3); shaina.addDReb(3); shaina.addAssists(3); shaina.addSteals(0); shaina.addBlocks(0); shaina.addTurnovers(0); shaina.addFouls(0);
+        sruti.addPoints(6);   sruti.addFGM(2);   sruti.addFGA(4);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(2); sruti.addFTA(4); sruti.addOReb(0); sruti.addDReb(6); sruti.addAssists(4); sruti.addSteals(0); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(0);
+        anaisha.addPoints(5); anaisha.addFGM(2); anaisha.addFGA(1); anaisha.addThreePM(0); anaisha.addThreePA(0); anaisha.addFTM(1); anaisha.addFTA(2); anaisha.addOReb(0); anaisha.addDReb(1); anaisha.addAssists(1); anaisha.addSteals(5); anaisha.addBlocks(0); anaisha.addTurnovers(0); anaisha.addFouls(0);
+        kaylin.addPoints(4);  kaylin.addFGM(1);  kaylin.addFGA(2);  kaylin.addThreePM(0); kaylin.addThreePA(0); kaylin.addFTM(2); kaylin.addFTA(4); kaylin.addOReb(0); kaylin.addDReb(4); kaylin.addAssists(1); kaylin.addSteals(2); kaylin.addBlocks(0); kaylin.addTurnovers(0); kaylin.addFouls(0);
+        steph.addPoints(6);   steph.addFGM(3);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(0); steph.addFTA(0); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(2); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(0);
+        adhuna.addPoints(13); adhuna.addFGM(5);  adhuna.addFGA(3);  adhuna.addThreePM(0); adhuna.addThreePA(3); adhuna.addFTM(3); adhuna.addFTA(5); adhuna.addOReb(0); adhuna.addDReb(3); adhuna.addAssists(3); adhuna.addSteals(3); adhuna.addBlocks(2); adhuna.addTurnovers(0); adhuna.addFouls(0);
+        krithi.addPoints(6);  krithi.addFGM(3);  krithi.addFGA(3);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+ 
+        msj.addMatch(foothill);
+ 
+        // GAME 24: vs Monte Vista - LOSS 36-57
+        
+        BasketballMatch monteVista = new BasketballMatch("Monte Vista", "TBD", 36, 57);
+ 
+        viven.addPoints(4);   viven.addFGM(1);   viven.addFGA(2);   viven.addThreePM(0); viven.addThreePA(2); viven.addFTM(2); viven.addFTA(4); viven.addOReb(0); viven.addDReb(0); viven.addAssists(0); viven.addSteals(0); viven.addBlocks(0); viven.addTurnovers(0); viven.addFouls(0);
+        steph.addPoints(4);   steph.addFGM(1);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(2); steph.addFTM(2); steph.addFTA(4); steph.addOReb(0); steph.addDReb(2); steph.addAssists(2); steph.addSteals(1); steph.addBlocks(0); steph.addTurnovers(0); steph.addFouls(0);
+        adhuna.addPoints(16); adhuna.addFGM(6);  adhuna.addFGA(2);  adhuna.addThreePM(0); adhuna.addThreePA(1); adhuna.addFTM(4); adhuna.addFTA(6); adhuna.addOReb(0); adhuna.addDReb(2); adhuna.addAssists(6); adhuna.addSteals(2); adhuna.addBlocks(3); adhuna.addTurnovers(2); adhuna.addFouls(2);
+        amy.addPoints(2);     amy.addFGM(1);     amy.addFGA(3);     amy.addThreePM(0); amy.addThreePA(0); amy.addFTM(0); amy.addFTA(0); amy.addOReb(0); amy.addDReb(3); amy.addAssists(2); amy.addSteals(3); amy.addBlocks(2); amy.addTurnovers(0); amy.addFouls(0);
+        krithi.addPoints(1);  krithi.addFGM(0);  krithi.addFGA(1);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(1); krithi.addFTA(2); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+        // Generated for remaining pts
+        kaylin.addPoints(5);  kaylin.addFGM(2);  kaylin.addFGA(4);  kaylin.addThreePM(0); kaylin.addThreePA(1); kaylin.addFTM(1); kaylin.addFTA(2); kaylin.addOReb(0); kaylin.addDReb(1); kaylin.addAssists(1); kaylin.addSteals(1); kaylin.addBlocks(0); kaylin.addTurnovers(1); kaylin.addFouls(2);
+        sruti.addPoints(4);   sruti.addFGM(2);   sruti.addFGA(3);   sruti.addThreePM(0); sruti.addThreePA(0); sruti.addFTM(0); sruti.addFTA(0); sruti.addOReb(0); sruti.addDReb(1); sruti.addAssists(1); sruti.addSteals(1); sruti.addBlocks(0); sruti.addTurnovers(0); sruti.addFouls(0);
+ 
+        msj.addMatch(monteVista);
+ 
+        // GAME 25: vs Emerald - WIN 47-28
+        
+        BasketballMatch emerald = new BasketballMatch("Emerald", "TBD", 47, 28);
+ 
+        gia.addPoints(2);     gia.addFGM(1);     gia.addFGA(1);     gia.addThreePM(0); gia.addThreePA(0); gia.addFTM(0); gia.addFTA(0); gia.addOReb(0); gia.addDReb(2); gia.addAssists(1); gia.addSteals(0); gia.addBlocks(0); gia.addTurnovers(0); gia.addFouls(0);
+        viven.addPoints(16);  viven.addFGM(6);   viven.addFGA(1);   viven.addThreePM(0); viven.addThreePA(0); viven.addFTM(4); viven.addFTA(7); viven.addOReb(0); viven.addDReb(1); viven.addAssists(6); viven.addSteals(1); viven.addBlocks(2); viven.addTurnovers(0); viven.addFouls(0);
+        steph.addPoints(7);   steph.addFGM(2);   steph.addFGA(2);   steph.addThreePM(0); steph.addThreePA(1); steph.addFTM(3); steph.addFTA(4); steph.addOReb(0); steph.addDReb(2); steph.addAssists(7); steph.addSteals(2); steph.addBlocks(1); steph.addTurnovers(0); steph.addFouls(0);
+        pearl.addPoints(1);   pearl.addFGM(0);   pearl.addFGA(2);   pearl.addThreePM(0); pearl.addThreePA(0); pearl.addFTM(1); pearl.addFTA(2); pearl.addOReb(0); pearl.addDReb(2); pearl.addAssists(2); pearl.addSteals(1); pearl.addBlocks(0); pearl.addTurnovers(0); pearl.addFouls(0);
+        adhuna.addPoints(6);  adhuna.addFGM(2);  adhuna.addFGA(2);  adhuna.addThreePM(0); adhuna.addThreePA(2); adhuna.addFTM(2); adhuna.addFTA(2); adhuna.addOReb(0); adhuna.addDReb(2); adhuna.addAssists(6); adhuna.addSteals(2); adhuna.addBlocks(3); adhuna.addTurnovers(0); adhuna.addFouls(0);
+        amy.addPoints(3);     amy.addFGM(1);     amy.addFGA(3);     amy.addThreePM(0); amy.addThreePA(1); amy.addFTM(1); amy.addFTA(2); amy.addOReb(0); amy.addDReb(3); amy.addAssists(3); amy.addSteals(3); amy.addBlocks(3); amy.addTurnovers(0); amy.addFouls(0);
+        krithi.addPoints(12); krithi.addFGM(6);  krithi.addFGA(6);  krithi.addThreePM(0); krithi.addThreePA(0); krithi.addFTM(0); krithi.addFTA(0); krithi.addOReb(0); krithi.addDReb(0); krithi.addAssists(0); krithi.addSteals(0); krithi.addBlocks(0); krithi.addTurnovers(0); krithi.addFouls(0);
+ 
+        msj.addMatch(emerald);
+ 
+        return msj;
+    }
+}
