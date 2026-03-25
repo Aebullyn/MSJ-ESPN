@@ -1,0 +1,67 @@
+/*
+Scoring (cumulative season totals):
+    Singles win   +5.0
+    Singles loss  -1.0
+    Doubles win   +3.0
+    Doubles loss  -0.5
+ */
+public class TennisFantasyPlayer implements FantasyPlayer {
+ 
+    private final TennisPlayer player;
+    private final int price;
+ 
+    private static final double SW_W  =  5.0;
+    private static final double SL_W  = -1.0;
+    private static final double DW_W  =  3.0;
+    private static final double DL_W  = -0.5;
+ 
+    public TennisFantasyPlayer(TennisPlayer player) {
+        this.player = player;
+        this.price  = calcPrice();
+    }
+ 
+     public String getName()  { return player.getName(); }
+     public String getSport() { return "Tennis"; }
+ 
+    public int getSinglesWins()   { return singlesWins; }
+    public int getSinglesLosses() { return singlesLosses; }
+    public int getDoublesWins()   { return doublesWins; }
+    public int getDoublesLosses() { return doublesLosses; }
+   
+public double getFantasyPoints() {
+    return player.getSinglesWins()   * SW_W
+         + player.getSinglesLosses() * SL_W
+         + player.getDoublesWins()   * DW_W
+         + player.getDoublesLosses() * DL_W;
+}
+ 
+     public int getPrice() { return price; }
+ 
+    
+    public String getDraftSummary() {
+    return player.getName() + " | $" + price + " | " + getFantasyPoints() + " fantasy pts (S: " + player.getSinglesRecord() + " D: " + player.getDoublesRecord() + ")";
+}
+ 
+    public TennisPlayer getPlayer() { return player; }
+ 
+    // ── helpers ──────────────────────────────────────────────────────────────
+ 
+    private int parseWins(String record) {
+        // format "W-L"
+        try { return Integer.parseInt(record.split("-")[0]); }
+        catch (Exception e) { return 0; }
+    }
+ 
+    private int parseLosses(String record) {
+        try { return Integer.parseInt(record.split("-")[1]); }
+        catch (Exception e) { return 0; }
+    }
+ 
+    private int calcPrice() {
+        int raw = 50 + (int)(getFantasyPoints() * 8);
+        return Math.max(50, Math.min(300, raw));
+    }
+ 
+    @Override public String toString() { return getDraftSummary(); }
+}
+ 
