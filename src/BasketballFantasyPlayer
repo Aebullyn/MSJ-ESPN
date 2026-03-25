@@ -1,0 +1,60 @@
+//Scoring 
+ //   Points      +1.0 each
+ //   Rebounds    +1.2 each  
+ //  Assists     +1.5 each
+ //   Steals      +3.0 each
+ //   Blocks      +3.0 each
+ //   Turnovers   -1.0 each
+ //   Fouls       -0.5 each
+ 
+public class BasketballFantasyPlayer implements FantasyPlayer {
+ 
+    private final BasketballPlayer player;
+    private final int price;
+ 
+    // ── scoring weights ──────────────────────────────────────────────────────
+    private static final double PTS_W  =  1.0;
+    private static final double REB_W  =  1.2;
+    private static final double AST_W  =  1.5;
+    private static final double STL_W  =  3.0;
+    private static final double BLK_W  =  3.0;
+    private static final double TO_W   = -1.0;
+    private static final double FOUL_W = -0.5;
+ 
+    public BasketballFantasyPlayer(BasketballPlayer player) {
+        this.player = player;
+        this.price  = calcPrice();
+    }
+ 
+ 
+    public String getName() { return player.getName(); }
+ 
+    public String getSport() { return "Basketball"; }
+ 
+    public double getFantasyPoints() {
+        return player.getPoints()      * PTS_W
+             + player.getTotalReb()    * REB_W
+             + player.getAssists()     * AST_W
+             + player.getSteals()      * STL_W
+             + player.getBlocks()      * BLK_W
+             + player.getTurnovers()   * TO_W
+             + player.getFouls()       * FOUL_W;
+    }
+ 
+    public int getPrice() { return price; }
+ 
+   public String getDraftSummary() {
+    return "#" + player.getNumber() + " " + player.getName() + " | $" + price + " | " + getFantasyPoints() + " fantasy pts";
+}
+ 
+ 
+    public BasketballPlayer getPlayer() { return player; }
+ 
+    private int calcPrice() {
+        double fp = getFantasyPoints();
+        int raw = 50 + (int)(fp / 1.5);
+        return Math.max(50, Math.min(300, raw));
+    }
+ 
+    public String toString() { return getDraftSummary(); }
+}
