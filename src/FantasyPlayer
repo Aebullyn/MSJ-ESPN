@@ -1,0 +1,31 @@
+/**
+ * FantasyPlayer wraps any real athlete and exposes a sport-agnostic
+ * fantasy-points score and a dollar price for the draft budget.
+ *
+ * Implement one concrete subclass per sport:
+ *   BasketballFantasyPlayer, SoccerFantasyPlayer, TennisFantasyPlayer
+ */
+public interface FantasyPlayer {
+ 
+    /** Display name shown in the UI (e.g. "Will Chapman") */
+    String getName();
+ 
+    /** Sport tag used to keep leagues separate ("Basketball", "Soccer", "Tennis") */
+    String getSport();
+ 
+    /**
+     * Total cumulative fantasy points earned so far this season.
+     * Recalculated from the underlying player's live stats every call.
+     */
+    double getFantasyPoints();
+ 
+    /**
+     * Draft price in fantasy dollars.
+     * Computed once at league creation from season-opening projections
+     * (or full-season stats if the season is already complete).
+     */
+    int getPrice();
+ 
+    /** One-line summary for draft screens, e.g. "#32 Will Chapman — $120 — 148.5 pts" */
+    String getDraftSummary();
+}
