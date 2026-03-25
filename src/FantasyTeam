@@ -1,0 +1,77 @@
+import java.util.ArrayList;
+ 
+/**
+  A single user's fantasy roster.
+ */
+public class FantasyTeam {
+ 
+    private final String ownerName;
+    private int budget;                         // remaining dollars
+    private final ArrayList<FantasyPlayer> roster = new ArrayList<>();
+ 
+    public FantasyTeam(String ownerName, int startingBudget) {
+        this.ownerName = ownerName;
+        this.budget    = startingBudget;
+    }
+ 
+    // ── drafting ─────────────────────────────────────────────────────────────
+ 
+    
+    public boolean addPlayer(FantasyPlayer fp) {
+        if (fp.getPrice() > budget) {
+            System.out.println("Not enough budget to draft " + fp.getName()
+                    + " ($" + fp.getPrice() + " needed, $" + budget + " remaining).");
+            return false;
+        }
+        if (roster.contains(fp)) {
+            System.out.println(fp.getName() + " is already on your roster.");
+            return false;
+        }
+        roster.add(fp);
+        budget -= fp.getPrice();
+        return true;
+    }
+ 
+    public boolean removePlayer(FantasyPlayer fp) {
+        if (roster.remove(fp)) {
+            budget += fp.getPrice();
+            return true;
+        }
+        return false;
+    }
+ 
+    // ── scoring ───────────────────────────────────────────────────────────────
+ 
+    public double getTotalFantasyPoints() {
+        double total = 0;
+        for (FantasyPlayer fp : roster) total += fp.getFantasyPoints();
+        return total;
+    }
+ 
+    // ── getters ──────────────────────────────────────────────────────────────
+ 
+    public String getOwnerName()              { return ownerName; }
+    public int getRemainingBudget()           { return budget; }
+    public ArrayList<FantasyPlayer> getRoster() { return roster; }
+ 
+    // ── display ──────────────────────────────────────────────────────────────
+ 
+    public void printRoster() {
+        System.out.println("=== " + ownerName + "'s Fantasy Team ===");
+        System.out.println("Remaining budget: $" + budget);
+        if (roster.isEmpty()) {
+            System.out.println("  (no players drafted yet)");
+        } else {
+            for (FantasyPlayer fp : roster) {
+                System.out.printf("  %-22s | $%-4d | %.1f pts%n",
+                        fp.getName(), fp.getPrice(), fp.getFantasyPoints());
+            }
+        }
+        System.out.printf("  TOTAL FANTASY POINTS: %.1f%n", getTotalFantasyPoints());
+    }
+ 
+    public String toString() {
+        return ownerName + " | Budget left: $" + budget
+                + " | Fantasy pts: " + String.format("%.1f", getTotalFantasyPoints());
+    }
+}
