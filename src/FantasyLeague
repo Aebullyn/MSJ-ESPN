@@ -1,0 +1,100 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+ 
+/**
+
+public class FantasyLeague {
+ 
+    private final String leagueName;   
+    private final String sport;        
+    private final int    budgetCap;    // each team starts with this many dollars
+ 
+    private final ArrayList<FantasyPlayer> availablePlayers = new ArrayList<>();
+    private final ArrayList<FantasyTeam>   teams            = new ArrayList<>();
+ 
+    public FantasyLeague(String leagueName, String sport, int budgetCap) {
+        this.leagueName = leagueName;
+        this.sport      = sport;
+        this.budgetCap  = budgetCap;
+    }
+ 
+    //  setup 
+ 
+    public void addAvailablePlayer(FantasyPlayer fp) {
+        if (!fp.getSport().equalsIgnoreCase(sport)) {
+            System.out.println("Cannot add " + fp.getName()
+                    + " (" + fp.getSport() + ") to a " + sport + " league.");
+            return;
+        }
+        availablePlayers.add(fp);
+    }
+ 
+    public FantasyTeam createTeam(String ownerName) {
+        FantasyTeam team = new FantasyTeam(ownerName, budgetCap);
+        teams.add(team);
+        return team;
+    }
+ 
+    //  drafting 
+ 
+
+    public boolean draftPlayer(FantasyTeam team, FantasyPlayer fp) {
+        if (!availablePlayers.contains(fp)) {
+            System.out.println(fp.getName() + " has already been drafted or is not in this league.");
+            return false;
+        }
+        if (!teams.contains(team)) {
+            System.out.println(team.getOwnerName() + " is not registered in this league.");
+            return false;
+        }
+        if (team.addPlayer(fp)) {
+            availablePlayers.remove(fp);
+            System.out.println(team.getOwnerName() + " drafted " + fp.getName()
+                    + " for $" + fp.getPrice());
+            return true;
+        }
+        return false;
+    }
+ 
+    //  standings 
+ 
+    public void printStandings() {
+        System.out.println("\n╔══════════════════════════════════════════════════╗");
+        System.out.println("║  " + leagueName + " — STANDINGS");
+        System.out.println("╚══════════════════════════════════════════════════╝");
+ 
+        ArrayList<FantasyTeam> sorted = new ArrayList<>(teams);
+for (int i = 0; i < sorted.size() - 1; i++) {
+    for (int j = 0; j < sorted.size() - 1 - i; j++) {
+        if (sorted.get(j).getTotalFantasyPoints() < sorted.get(j + 1).getTotalFantasyPoints()) {
+            FantasyTeam temp = sorted.get(j);
+            sorted.set(j, sorted.get(j + 1));
+            sorted.set(j + 1, temp);
+        }
+    }
+} 
+        int rank = 1;
+        for (FantasyTeam t : sorted) {
+System.out.println("  " + rank + ". " + t.getOwnerName() + " " + t.getTotalFantasyPoints() + " pts  ($" + t.getRemainingBudget() + " left)");
+                    rank++, t.getOwnerName(),
+                    t.getTotalFantasyPoints(),
+                    t.getRemainingBudget());
+        }
+    }
+ 
+    public void printAvailablePlayers() {
+        System.out.println("\n── Available Players (" + sport + ") ──");
+        availablePlayers.sort(Comparator.comparingDouble(FantasyPlayer::getFantasyPoints).reversed());
+        for (FantasyPlayer fp : availablePlayers) {
+            System.out.println("  " + fp.getDraftSummary());
+        }
+    }
+ 
+    // ── getters ───────────────────────────────────────────────────────────────
+ 
+    public String getLeagueName()                          { return leagueName; }
+    public String getSport()                               { return sport; }
+    public int    getBudgetCap()                           { return budgetCap; }
+    public ArrayList<FantasyPlayer> getAvailablePlayers()  { return availablePlayers; }
+    public ArrayList<FantasyTeam>   getTeams()             { return teams; }
+}
