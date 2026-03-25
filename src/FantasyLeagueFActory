@@ -1,0 +1,57 @@
+import java.util.ArrayList;
+ 
+public class FantasyLeagueFactory {
+ 
+    /** Default budget given to each fantasy team. */
+    public static final int DEFAULT_BUDGET = 1000;
+ 
+    //  per-sport factory methods 
+ 
+    public static FantasyLeague createBasketballLeague(String name, BasketballTeam realTeam) {
+        FantasyLeague league = new FantasyLeague(name, "Basketball", DEFAULT_BUDGET);
+        for (BasketballPlayer p : realTeam.getRoster()) {
+            league.addAvailablePlayer(new BasketballFantasyPlayer(p));
+        }
+        return league;
+    }
+ 
+    public static FantasyLeague createSoccerLeague(String name, SoccerTeam realTeam) {
+        FantasyLeague league = new FantasyLeague(name, "Soccer", DEFAULT_BUDGET);
+        for (SoccerPlayer p : realTeam.getRoster()) {
+            league.addAvailablePlayer(new SoccerFantasyPlayer(p));
+        }
+        return league;
+    }
+ 
+    public static FantasyLeague createTennisLeague(String name, TennisTeam realTeam) {
+        // Tennis: populate win/loss records by scanning all match results first
+        populateTennisRecords(realTeam);
+        FantasyLeague league = new FantasyLeague(name, "Tennis", DEFAULT_BUDGET);
+        for (TennisPlayer p : realTeam.getRoster()) {
+            league.addAvailablePlayer(new TennisFantasyPlayer(p));
+        }
+        return league;
+    }
+ 
+ 
+    private static void populateTennisRecords(TennisTeam team) {
+        for (TennisMatch match : team.getMatches()) {
+            for (TennisGameResult result : match.getResults()) {
+                boolean isSingles = result.getCourt().startsWith("Singles");
+                boolean win       = result.isWin();
+                
+                TennisPlayer p1 = result.getPlayer1();
+                TennisPlayer p2 = result.getPlayer2(); // null for singles
+ 
+                if (p1 != null) {
+                    if (isSingles) { if (win) p1.addSinglesWin(); else p1.addSinglesLoss(); }
+                    else           { if (win) p1.addDoublesWin(); else p1.addDoublesLoss(); }
+                }
+                if (p2 != null) {
+                    if (win) p2.addDoublesWin(); else p2.addDoublesLoss();
+                }
+            }
+        }
+    }
+}
+ 
