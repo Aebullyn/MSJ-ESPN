@@ -1,0 +1,37 @@
+public class TennisGameResult {
+ 
+    private String       court;
+    private TennisPlayer player1;
+    private TennisPlayer player2;   // null for singles
+    private String       opponent;
+    private String       score;
+    private boolean      win;
+ 
+    public TennisGameResult(String court, TennisPlayer player1,
+                            String opponent, String score, boolean win) {
+        this.court   = court;
+        this.player1 = player1;
+        this.player2 = null;
+        this.opponent = opponent;
+        this.score   = score;
+        this.win     = win;
+    }
+ 
+    public TennisGameResult(String court, TennisPlayer player1, TennisPlayer player2,
+                            String opponent, String score, boolean win) {
+        this.court   = court;
+        this.player1 = player1;
+        this.player2 = player2;
+        this.opponent = opponent;
+        this.score   = score;
+        this.win     = win;
+    }
+ 
+    public boolean      isWin()      { return win; }
+    public String       getCourt()   { return court; }
+    public String       getScore()   { return score; }
+    public String       getOpponent(){ return opponent; }
+    public TennisPlayer getPlayer1() { return player1; }
+    public TennisPlayer getPlayer2() { return player2; }
+}
+ 
