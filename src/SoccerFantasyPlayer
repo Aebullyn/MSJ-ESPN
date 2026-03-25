@@ -1,0 +1,45 @@
+/**
+  Scoring (cumulative season totals):
+    Goal          +6.0
+   Assist        +3.0
+Shot on Goal  +0.5
+ */
+public class SoccerFantasyPlayer implements FantasyPlayer {
+ 
+    private final SoccerPlayer player;
+    private final int price;
+ 
+    private static final double GOAL_W  = 6.0;
+    private static final double ASSIST_W = 3.0;
+    private static final double SOG_W   = 0.5;
+ 
+    public SoccerFantasyPlayer(SoccerPlayer player) {
+        this.player = player;
+        this.price  = calcPrice();
+    }
+ 
+     public String getName()  { return player.getName(); }
+     public String getSport() { return "Soccer"; }
+ 
+    
+    public double getFantasyPoints() {
+        return player.getGoals()       * GOAL_W
+             + player.getAssists()     * ASSIST_W
+             + player.getShotsOnGoal() * SOG_W;
+    }
+ 
+     public int getPrice() { return price; }
+ 
+    public String getDraftSummary() {
+    return "#" + player.getNumber() + " " + player.getName() + " | $" + price + " | " + getFantasyPoints() + " fantasy pts";
+}
+    public SoccerPlayer getPlayer() { return player; }
+ 
+    private int calcPrice() {
+        int raw = 50 + (int)(getFantasyPoints() * 5);
+        return Math.max(50, Math.min(300, raw));
+    }
+ 
+     public String toString() { return getDraftSummary(); }
+}
+ 
